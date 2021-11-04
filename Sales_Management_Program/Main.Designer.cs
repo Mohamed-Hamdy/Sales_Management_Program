@@ -40,6 +40,7 @@ namespace Sales_Management_Program
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.pn_content = new System.Windows.Forms.Panel();
             this.navbar_pn = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -54,7 +55,6 @@ namespace Sales_Management_Program
             this.simpleButton20 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton21 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton22 = new DevExpress.XtraEditors.SimpleButton();
-            this.pn_content = new System.Windows.Forms.Panel();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel7.SuspendLayout();
@@ -154,6 +154,16 @@ namespace Sales_Management_Program
             this.panel7.Size = new System.Drawing.Size(1134, 691);
             this.panel7.TabIndex = 6;
             // 
+            // pn_content
+            // 
+            this.pn_content.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pn_content.Location = new System.Drawing.Point(0, 0);
+            this.pn_content.Name = "pn_content";
+            this.pn_content.Size = new System.Drawing.Size(884, 691);
+            this.pn_content.TabIndex = 0;
+            // 
             // navbar_pn
             // 
             this.navbar_pn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
@@ -223,7 +233,7 @@ namespace Sales_Management_Program
             this.main_btn.Appearance.Options.UseFont = true;
             this.main_btn.Appearance.Options.UseForeColor = true;
             this.main_btn.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.main_btn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton5.ImageOptions.SvgImage")));
+            this.main_btn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("main_btn.ImageOptions.SvgImage")));
             this.main_btn.Location = new System.Drawing.Point(3, 192);
             this.main_btn.Name = "main_btn";
             this.main_btn.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
@@ -238,7 +248,7 @@ namespace Sales_Management_Program
             this.items_brn.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.items_brn.Appearance.Options.UseFont = true;
             this.items_brn.Appearance.Options.UseForeColor = true;
-            this.items_brn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton15.ImageOptions.Image")));
+            this.items_brn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("items_brn.ImageOptions.Image")));
             this.items_brn.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
             this.items_brn.Location = new System.Drawing.Point(6, 251);
             this.items_brn.Name = "items_brn";
@@ -352,16 +362,6 @@ namespace Sales_Management_Program
             this.simpleButton22.Size = new System.Drawing.Size(241, 44);
             this.simpleButton22.TabIndex = 23;
             this.simpleButton22.Text = "الاعدادات";
-            // 
-            // pn_content
-            // 
-            this.pn_content.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pn_content.Location = new System.Drawing.Point(3, 6);
-            this.pn_content.Name = "pn_content";
-            this.pn_content.Size = new System.Drawing.Size(884, 685);
-            this.pn_content.TabIndex = 0;
             // 
             // Main
             // 

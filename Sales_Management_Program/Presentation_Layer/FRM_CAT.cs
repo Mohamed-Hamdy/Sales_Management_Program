@@ -15,6 +15,7 @@ namespace Sales_Management_Program.Presentation_Layer
 {
     public partial class FRM_CAT : Form
     {
+        Business_Layer.Methods methods = new Business_Layer.Methods();
         private Sales_Management_SystemEntities1 db;
         TB_CAT tb_cat = new TB_CAT();
         int id;
@@ -38,7 +39,7 @@ namespace Sales_Management_Program.Presentation_Layer
         }
         public Panel recatpanel()
         {
-            return pn_contaner;
+            return pn_cat;
         }
 
         private void FRM_CAT_Load(object sender, EventArgs e)
@@ -106,7 +107,13 @@ namespace Sales_Management_Program.Presentation_Layer
 
                 }
             }
-            catch { }
+            catch 
+            {
+                dialog.txt_caption.Text = "لا يوجد صنف لحذفه";
+                dialog.Width = this.Width;
+                dialog.Show();
+                Update_data();
+            }
             
 
         }
@@ -118,6 +125,22 @@ namespace Sales_Management_Program.Presentation_Layer
 
         private void gridControl1_Click_1(object sender, EventArgs e)
         {
+
+        }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+            Presentation_Layer.FFRM_CAT_ADD fRM_add = new FFRM_CAT_ADD();
+
+            id = Convert.ToInt32(tileView1.GetFocusedRowCellValue("ID"));
+            tb_cat = db.TB_CAT.Where(x => x.ID == id).FirstOrDefault();
+            fRM_add.edt_name.Text = tb_cat.CAT_Name.ToString();
+            methods.by = tb_cat.CAT_Cover;
+            fRM_add.pic_cover.Image = Image.FromStream(methods.convert_image());
+            fRM_add.id = id;
+            fRM_add.btn_add.Text = "تعديل";
+            frm_home.Show();
+
 
         }
     }

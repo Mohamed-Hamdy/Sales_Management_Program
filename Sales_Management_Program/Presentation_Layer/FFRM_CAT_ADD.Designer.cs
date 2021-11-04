@@ -119,8 +119,8 @@ namespace Sales_Management_Program.Presentation_Layer
 
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox edt_name;
-        private DevExpress.XtraEditors.PictureEdit pic_cover;
         public DevExpress.XtraEditors.SimpleButton btn_add;
+        public System.Windows.Forms.TextBox edt_name;
+        public DevExpress.XtraEditors.PictureEdit pic_cover;
     }
 }

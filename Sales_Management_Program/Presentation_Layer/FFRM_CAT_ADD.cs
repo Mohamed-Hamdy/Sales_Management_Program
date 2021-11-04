@@ -31,27 +31,6 @@ namespace Sales_Management_Program.Presentation_Layer
             InitializeComponent();
         }
 
-        /*
-        private void FFRM_CAT_ADD_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureEdit1_EditValueChanged(object sender, EventArgs e)
-        {
-
-        }
-        */
         private void btn_add_Click(object sender, EventArgs e)
         {
             // check add or edit = ""
@@ -71,6 +50,7 @@ namespace Sales_Management_Program.Presentation_Layer
                     // Add
                     pic_cover.Image.Save(methods.ma, System.Drawing.Imaging.ImageFormat.Jpeg);
                     tb_cat.CAT_Name = edt_name.Text;
+                    tb_cat.ID = id;
                     tb_cat.CAT_Cover = methods.convert_byte();
                     db.TB_CAT.Add(tb_cat);
                     db.SaveChanges();
@@ -78,13 +58,23 @@ namespace Sales_Management_Program.Presentation_Layer
                     toast.Show();
                     db = new Sales_Management_SystemEntities1();
                     frm_cat.gridControl1.DataSource = db.TB_CAT.ToList();
-
                     this.Close();
 
                 }
                 else
                 {
                     // edit
+                    pic_cover.Image.Save(methods.ma, System.Drawing.Imaging.ImageFormat.Jpeg);
+                    tb_cat.CAT_Name = edt_name.Text;
+                    tb_cat.CAT_Cover = methods.convert_byte();
+                    db.TB_CAT.Add(tb_cat);
+                    db.SaveChanges();
+                    toast.txt_caption.Text = "تم اضافه عنصر جديد";
+                    toast.Show();
+                    db = new Sales_Management_SystemEntities1();
+                    frm_cat.gridControl1.DataSource = db.TB_CAT.ToList();
+                    this.Close();
+
                 }
             }
 
@@ -95,5 +85,7 @@ namespace Sales_Management_Program.Presentation_Layer
         {
 
         }
+
+        
     }
 }

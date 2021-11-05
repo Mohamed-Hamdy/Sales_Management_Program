@@ -31,21 +31,29 @@ namespace Sales_Management_Program.Presentation_Layer
             InitializeComponent();
         }
 
-        private void btn_add_Click(object sender, EventArgs e)
+        
+
+        private void FFRM_CAT_ADD_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        
+        private void simpleButton2_Click(object sender, EventArgs e)
         {
             // check add or edit = ""
-           if (edt_name.Text == "")
+            if (edt_name.Text == "")
             {
                 dialog.Width = this.Width;
                 dialog.txt_caption.Text = "اسم الصنف مطلوب";
                 dialog.Show();
-                
-                
+
+
             }
             else
             {
                 // check add or edit 
-                if(id == 0)
+                if (id == 0)
                 {
                     // Add
                     pic_cover.Image.Save(methods.ma, System.Drawing.Imaging.ImageFormat.Jpeg);
@@ -66,10 +74,13 @@ namespace Sales_Management_Program.Presentation_Layer
                     // edit
                     pic_cover.Image.Save(methods.ma, System.Drawing.Imaging.ImageFormat.Jpeg);
                     tb_cat.CAT_Name = edt_name.Text;
+                    tb_cat.ID = this.id;
                     tb_cat.CAT_Cover = methods.convert_byte();
-                    db.TB_CAT.Add(tb_cat);
+
+                    db.Entry(tb_cat).State = System.Data.Entity.EntityState.Modified;
+                    //db.TB_CAT.Add(tb_cat);
                     db.SaveChanges();
-                    toast.txt_caption.Text = "تم اضافه عنصر جديد";
+                    toast.txt_caption.Text = "تم تعديل العنصر ";
                     toast.Show();
                     db = new Sales_Management_SystemEntities1();
                     frm_cat.gridControl1.DataSource = db.TB_CAT.ToList();
@@ -78,14 +89,7 @@ namespace Sales_Management_Program.Presentation_Layer
                 }
             }
 
-           
-        }
-
-        private void FFRM_CAT_ADD_Load(object sender, EventArgs e)
-        {
 
         }
-
-        
     }
 }

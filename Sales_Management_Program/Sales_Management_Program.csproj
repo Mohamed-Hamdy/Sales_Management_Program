@@ -190,11 +190,23 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation_Layer\FFRM_SUPP_ADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation_Layer\FFRM_SUPP_ADD.Designer.cs">
+      <DependentUpon>FFRM_SUPP_ADD.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation_Layer\FFRM_CAT_ADD.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentation_Layer\FFRM_CAT_ADD.Designer.cs">
       <DependentUpon>FFRM_CAT_ADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation_Layer\FRM_SUPP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation_Layer\FRM_SUPP.Designer.cs">
+      <DependentUpon>FRM_SUPP.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation_Layer\FRM_CAT.cs">
       <SubType>Form</SubType>
@@ -214,6 +226,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Sales_Management_SystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Sales_Management_SystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sales_Management_SystemDataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="Sales_Management_SystemM.Context.cs">
       <AutoGen>True</AutoGen>
@@ -236,6 +253,9 @@
     <Compile Include="TB_CAT.cs">
       <DependentUpon>Sales_Management_SystemM.tt</DependentUpon>
     </Compile>
+    <Compile Include="TB_Suppliers.cs">
+      <DependentUpon>Sales_Management_SystemM.tt</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="EPL\Dialog.resx">
       <DependentUpon>Dialog.cs</DependentUpon>
     </EmbeddedResource>
@@ -245,8 +265,14 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation_Layer\FFRM_SUPP_ADD.resx">
+      <DependentUpon>FFRM_SUPP_ADD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation_Layer\FFRM_CAT_ADD.resx">
       <DependentUpon>FFRM_CAT_ADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation_Layer\FRM_SUPP.resx">
+      <DependentUpon>FRM_SUPP.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation_Layer\FRM_CAT.resx">
       <DependentUpon>FRM_CAT.cs</DependentUpon>
@@ -290,6 +316,17 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Sales_Management_SystemM.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="Sales_Management_SystemDataSet1.xsc">
+      <DependentUpon>Sales_Management_SystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Sales_Management_SystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Sales_Management_SystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Sales_Management_SystemDataSet1.xss">
+      <DependentUpon>Sales_Management_SystemDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Sales_Management_SystemM.edmx.diagram">
       <DependentUpon>Sales_Management_SystemM.edmx</DependentUpon>
     </None>

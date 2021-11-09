@@ -48,7 +48,7 @@ namespace Sales_Management_Program.EPL
             this.txt_caption.ForeColor = System.Drawing.SystemColors.GrayText;
             this.txt_caption.Location = new System.Drawing.Point(0, 0);
             this.txt_caption.Name = "txt_caption";
-            this.txt_caption.Size = new System.Drawing.Size(745, 135);
+            this.txt_caption.Size = new System.Drawing.Size(450, 100);
             this.txt_caption.TabIndex = 8;
             this.txt_caption.Text = "الرسالة";
             this.txt_caption.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -58,7 +58,7 @@ namespace Sales_Management_Program.EPL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(745, 135);
+            this.ClientSize = new System.Drawing.Size(450, 100);
             this.Controls.Add(this.txt_caption);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dialog";

@@ -7,6 +7,7 @@
       <Diagram DiagramId="185b7f115ba14505b742f61b2ce9f7ad" Name="Diagram1">
         <EntityTypeShape EntityType="Sales_Management_SystemModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Sales_Management_SystemModel.TB_CAT" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Sales_Management_SystemModel.TB_Suppliers" Width="1.5" PointX="4.75" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

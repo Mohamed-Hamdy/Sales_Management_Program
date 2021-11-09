@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="Sales_Management_SystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="Sales_Management_SystemModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="sysdiagrams">
           <Key>
             <PropertyRef Name="diagram_id" />
@@ -23,12 +23,22 @@
           <Property Name="CAT_Name" Type="nvarchar" MaxLength="50" />
           <Property Name="CAT_Cover" Type="image" />
         </EntityType>
+        <EntityType Name="TB_Suppliers">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Supp_Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Supp_Phone" Type="nvarchar" MaxLength="50" />
+          <Property Name="Supp_Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="Supp_Image" Type="image" />
+        </EntityType>
         <EntityContainer Name="Sales_Management_SystemModelStoreContainer">
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TB_CAT" EntityType="Self.TB_CAT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TB_Suppliers" EntityType="Self.TB_Suppliers" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="Sales_Management_SystemModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -53,7 +63,18 @@
         <EntityContainer Name="Sales_Management_SystemEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
           <EntitySet Name="TB_CAT" EntityType="Self.TB_CAT" />
+          <EntitySet Name="TB_Suppliers" EntityType="Sales_Management_SystemModel.TB_Suppliers" />
         </EntityContainer>
+        <EntityType Name="TB_Suppliers">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Supp_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Supp_Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Supp_Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Supp_Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -77,6 +98,17 @@
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="CAT_Name" ColumnName="CAT_Name" />
                 <ScalarProperty Name="CAT_Cover" ColumnName="CAT_Cover" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_Suppliers">
+            <EntityTypeMapping TypeName="Sales_Management_SystemModel.TB_Suppliers">
+              <MappingFragment StoreEntitySet="TB_Suppliers">
+                <ScalarProperty Name="Supp_Image" ColumnName="Supp_Image" />
+                <ScalarProperty Name="Supp_Email" ColumnName="Supp_Email" />
+                <ScalarProperty Name="Supp_Phone" ColumnName="Supp_Phone" />
+                <ScalarProperty Name="Supp_Name" ColumnName="Supp_Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

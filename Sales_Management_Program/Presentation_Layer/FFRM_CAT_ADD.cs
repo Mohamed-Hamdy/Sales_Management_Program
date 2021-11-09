@@ -47,8 +47,6 @@ namespace Sales_Management_Program.Presentation_Layer
                 dialog.Width = this.Width;
                 dialog.txt_caption.Text = "اسم الصنف مطلوب";
                 dialog.Show();
-
-
             }
             else
             {

@@ -22,9 +22,14 @@ namespace Sales_Management_Program.EPL
             this.Close();
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void txt_caption_Click(object sender, EventArgs e)
         {
-            this.Close();
+           this.Close();
         }
+
+        private void txt_caption_Click_1(object sender, EventArgs e)
+        {
+           this.Close();
+        }   
     }
 }

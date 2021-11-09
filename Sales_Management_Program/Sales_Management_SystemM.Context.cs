@@ -27,5 +27,6 @@ namespace Sales_Management_Program
     
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<TB_CAT> TB_CAT { get; set; }
+        public virtual DbSet<TB_Suppliers> TB_Suppliers { get; set; }
     }
 }

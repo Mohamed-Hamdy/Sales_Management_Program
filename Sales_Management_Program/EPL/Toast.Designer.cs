@@ -40,7 +40,7 @@ namespace Sales_Management_Program.EPL
             // 
             // timer1
             // 
-            this.timer1.Interval = 5000;
+            this.timer1.Interval = 3000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // pictureBox1
@@ -75,7 +75,7 @@ namespace Sales_Management_Program.EPL
             this.txt_caption.TabIndex = 7;
             this.txt_caption.Text = "الرسالة";
             this.txt_caption.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.txt_caption.Click += new System.EventHandler(this.label4_Click);
+            this.txt_caption.Click += new System.EventHandler(this.txt_caption_Click_1);
             // 
             // Toast
             // 

@@ -1,7 +1,7 @@
 ﻿
 namespace Sales_Management_Program.Presentation_Layer
 {
-    partial class FRM_CAT
+    partial class FRM_SUPP
     {
         /// <summary>
         /// Required designer variable.
@@ -30,27 +30,32 @@ namespace Sales_Management_Program.Presentation_Layer
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraEditors.TableLayout.TableRowDefinition tableRowDefinition1 = new DevExpress.XtraEditors.TableLayout.TableRowDefinition();
-            DevExpress.XtraEditors.TableLayout.TableRowDefinition tableRowDefinition2 = new DevExpress.XtraEditors.TableLayout.TableRowDefinition();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement1 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement2 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_CAT));
-            this.colCAT_Name1 = new DevExpress.XtraGrid.Columns.TileViewColumn();
-            this.colCAT_Cover1 = new DevExpress.XtraGrid.Columns.TileViewColumn();
+            DevExpress.XtraEditors.TableLayout.TableColumnDefinition tableColumnDefinition2 = new DevExpress.XtraEditors.TableLayout.TableColumnDefinition();
+            DevExpress.XtraEditors.TableLayout.TableRowDefinition tableRowDefinition5 = new DevExpress.XtraEditors.TableLayout.TableRowDefinition();
+            DevExpress.XtraEditors.TableLayout.TableRowDefinition tableRowDefinition6 = new DevExpress.XtraEditors.TableLayout.TableRowDefinition();
+            DevExpress.XtraEditors.TableLayout.TableRowDefinition tableRowDefinition7 = new DevExpress.XtraEditors.TableLayout.TableRowDefinition();
+            DevExpress.XtraEditors.TableLayout.TableRowDefinition tableRowDefinition8 = new DevExpress.XtraEditors.TableLayout.TableRowDefinition();
+            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement5 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
+            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement6 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
+            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement7 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
+            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement8 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_SUPP));
+            this.colSupp_Name = new DevExpress.XtraGrid.Columns.TileViewColumn();
+            this.colSupp_Phone = new DevExpress.XtraGrid.Columns.TileViewColumn();
+            this.colSupp_Email = new DevExpress.XtraGrid.Columns.TileViewColumn();
+            this.colSupp_Image = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.tBCATBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.colCAT_Cover = new DevExpress.XtraGrid.Columns.TileViewColumn();
-            this.sales_Management_SystemDataSet = new Sales_Management_Program.Sales_Management_SystemDataSet();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.tB_CATTableAdapter = new Sales_Management_Program.Sales_Management_SystemDataSetTableAdapters.TB_CATTableAdapter();
             this.colID = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.colCAT_Name = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.pn_cat = new System.Windows.Forms.Panel();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.tBSuppliersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sales_Management_SystemDataSet1 = new Sales_Management_Program.Sales_Management_SystemDataSet1();
             this.tileView1 = new DevExpress.XtraGrid.Views.Tile.TileView();
-            this.colID1 = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -58,31 +63,46 @@ namespace Sales_Management_Program.Presentation_Layer
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.tB_SuppliersTableAdapter = new Sales_Management_Program.Sales_Management_SystemDataSet1TableAdapters.TB_SuppliersTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tBCATBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sales_Management_SystemDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
             this.pn_cat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBSuppliersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sales_Management_SystemDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tileView1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // colCAT_Name1
+            // colSupp_Name
             // 
-            this.colCAT_Name1.FieldName = "CAT_Name";
-            this.colCAT_Name1.Name = "colCAT_Name1";
-            this.colCAT_Name1.Visible = true;
-            this.colCAT_Name1.VisibleIndex = 1;
+            this.colSupp_Name.FieldName = "Supp_Name";
+            this.colSupp_Name.Name = "colSupp_Name";
+            this.colSupp_Name.Visible = true;
+            this.colSupp_Name.VisibleIndex = 0;
             // 
-            // colCAT_Cover1
+            // colSupp_Phone
             // 
-            this.colCAT_Cover1.FieldName = "CAT_Cover";
-            this.colCAT_Cover1.Name = "colCAT_Cover1";
-            this.colCAT_Cover1.Visible = true;
-            this.colCAT_Cover1.VisibleIndex = 2;
+            this.colSupp_Phone.FieldName = "Supp_Phone";
+            this.colSupp_Phone.Name = "colSupp_Phone";
+            this.colSupp_Phone.Visible = true;
+            this.colSupp_Phone.VisibleIndex = 1;
+            // 
+            // colSupp_Email
+            // 
+            this.colSupp_Email.FieldName = "Supp_Email";
+            this.colSupp_Email.Name = "colSupp_Email";
+            this.colSupp_Email.Visible = true;
+            this.colSupp_Email.VisibleIndex = 2;
+            // 
+            // colSupp_Image
+            // 
+            this.colSupp_Image.FieldName = "Supp_Image";
+            this.colSupp_Image.Name = "colSupp_Image";
+            this.colSupp_Image.Visible = true;
+            this.colSupp_Image.VisibleIndex = 3;
             // 
             // gridView2
             // 
@@ -92,10 +112,6 @@ namespace Sales_Management_Program.Presentation_Layer
             // 
             this.gridView3.Name = "gridView3";
             // 
-            // tBCATBindingSource
-            // 
-            this.tBCATBindingSource.DataMember = "TB_CAT";
-            // 
             // colCAT_Cover
             // 
             this.colCAT_Cover.FieldName = "CAT_Cover";
@@ -103,18 +119,9 @@ namespace Sales_Management_Program.Presentation_Layer
             this.colCAT_Cover.Visible = true;
             this.colCAT_Cover.VisibleIndex = 2;
             // 
-            // sales_Management_SystemDataSet
-            // 
-            this.sales_Management_SystemDataSet.DataSetName = "Sales_Management_SystemDataSet";
-            this.sales_Management_SystemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // gridView1
             // 
             this.gridView1.Name = "gridView1";
-            // 
-            // tB_CATTableAdapter
-            // 
-            this.tB_CATTableAdapter.ClearBeforeFill = true;
             // 
             // colID
             // 
@@ -146,52 +153,80 @@ namespace Sales_Management_Program.Presentation_Layer
             // 
             // gridControl1
             // 
-            this.gridControl1.DataSource = this.tBCATBindingSource;
+            this.gridControl1.DataSource = this.tBSuppliersBindingSource;
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.tileView1;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(884, 589);
-            this.gridControl1.TabIndex = 21;
+            this.gridControl1.TabIndex = 22;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.tileView1});
+            // 
+            // tBSuppliersBindingSource
+            // 
+            this.tBSuppliersBindingSource.DataMember = "TB_Suppliers";
+            this.tBSuppliersBindingSource.DataSource = this.sales_Management_SystemDataSet1;
+            // 
+            // sales_Management_SystemDataSet1
+            // 
+            this.sales_Management_SystemDataSet1.DataSetName = "Sales_Management_SystemDataSet1";
+            this.sales_Management_SystemDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tileView1
             // 
             this.tileView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colID1,
-            this.colCAT_Name1,
-            this.colCAT_Cover1});
+            this.colSupp_Name,
+            this.colSupp_Phone,
+            this.colSupp_Email,
+            this.colSupp_Image});
             this.tileView1.GridControl = this.gridControl1;
             this.tileView1.Name = "tileView1";
-            this.tileView1.OptionsTiles.ItemSize = new System.Drawing.Size(248, 174);
+            this.tileView1.OptionsTiles.ItemSize = new System.Drawing.Size(248, 336);
             this.tileView1.OptionsTiles.RowCount = 0;
-            tableRowDefinition1.Length.Value = 47D;
-            tableRowDefinition2.Length.Value = 111D;
-            this.tileView1.TileRows.Add(tableRowDefinition1);
-            this.tileView1.TileRows.Add(tableRowDefinition2);
-            tileViewItemElement1.Appearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            tileViewItemElement1.Appearance.Normal.Options.UseFont = true;
-            tileViewItemElement1.Column = this.colCAT_Name1;
-            tileViewItemElement1.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement1.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileViewItemElement1.Text = "colCAT_Name1";
-            tileViewItemElement1.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement2.Column = this.colCAT_Cover1;
-            tileViewItemElement2.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement2.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileViewItemElement2.RowIndex = 1;
-            tileViewItemElement2.Text = "colCAT_Cover1";
-            tileViewItemElement2.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tileView1.TileTemplate.Add(tileViewItemElement1);
-            this.tileView1.TileTemplate.Add(tileViewItemElement2);
-            // 
-            // colID1
-            // 
-            this.colID1.FieldName = "ID";
-            this.colID1.Name = "colID1";
-            this.colID1.Visible = true;
-            this.colID1.VisibleIndex = 0;
+            tableColumnDefinition2.Length.Value = 113D;
+            this.tileView1.TileColumns.Add(tableColumnDefinition2);
+            tableRowDefinition5.Length.Value = 80D;
+            tableRowDefinition6.Length.Value = 101D;
+            tableRowDefinition7.Length.Value = 83D;
+            tableRowDefinition8.Length.Value = 104D;
+            this.tileView1.TileRows.Add(tableRowDefinition5);
+            this.tileView1.TileRows.Add(tableRowDefinition6);
+            this.tileView1.TileRows.Add(tableRowDefinition7);
+            this.tileView1.TileRows.Add(tableRowDefinition8);
+            tileViewItemElement5.Appearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            tileViewItemElement5.Appearance.Normal.Options.UseFont = true;
+            tileViewItemElement5.Column = this.colSupp_Name;
+            tileViewItemElement5.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileViewItemElement5.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileViewItemElement5.Text = "colSupp_Name";
+            tileViewItemElement5.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileViewItemElement6.Appearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F);
+            tileViewItemElement6.Appearance.Normal.Options.UseFont = true;
+            tileViewItemElement6.Column = this.colSupp_Phone;
+            tileViewItemElement6.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileViewItemElement6.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileViewItemElement6.RowIndex = 1;
+            tileViewItemElement6.Text = "colSupp_Phone";
+            tileViewItemElement6.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileViewItemElement7.Appearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F);
+            tileViewItemElement7.Appearance.Normal.Options.UseFont = true;
+            tileViewItemElement7.Column = this.colSupp_Email;
+            tileViewItemElement7.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileViewItemElement7.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileViewItemElement7.RowIndex = 2;
+            tileViewItemElement7.Text = "colSupp_Email";
+            tileViewItemElement7.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileViewItemElement8.Column = this.colSupp_Image;
+            tileViewItemElement8.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileViewItemElement8.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileViewItemElement8.RowIndex = 3;
+            tileViewItemElement8.Text = "colSupp_Image";
+            tileViewItemElement8.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tileView1.TileTemplate.Add(tileViewItemElement5);
+            this.tileView1.TileTemplate.Add(tileViewItemElement6);
+            this.tileView1.TileTemplate.Add(tileViewItemElement7);
+            this.tileView1.TileTemplate.Add(tileViewItemElement8);
             // 
             // panel2
             // 
@@ -215,7 +250,7 @@ namespace Sales_Management_Program.Presentation_Layer
             this.simpleButton6.Appearance.Options.UseFont = true;
             this.simpleButton6.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
             this.simpleButton6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton6.ImageOptions.SvgImage")));
-            this.simpleButton6.Location = new System.Drawing.Point(814, 24);
+            this.simpleButton6.Location = new System.Drawing.Point(823, 25);
             this.simpleButton6.Name = "simpleButton6";
             this.simpleButton6.Size = new System.Drawing.Size(58, 49);
             this.simpleButton6.TabIndex = 11;
@@ -227,7 +262,7 @@ namespace Sales_Management_Program.Presentation_Layer
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(583, 31);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(224, 38);
+            this.textBox2.Size = new System.Drawing.Size(234, 38);
             this.textBox2.TabIndex = 10;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -279,7 +314,11 @@ namespace Sales_Management_Program.Presentation_Layer
             this.simpleButton1.Text = "اضافه صنف";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
-            // FRM_CAT
+            // tB_SuppliersTableAdapter
+            // 
+            this.tB_SuppliersTableAdapter.ClearBeforeFill = true;
+            // 
+            // FRM_SUPP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -287,17 +326,17 @@ namespace Sales_Management_Program.Presentation_Layer
             this.ClientSize = new System.Drawing.Size(884, 685);
             this.Controls.Add(this.pn_cat);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FRM_CAT";
+            this.Name = "FRM_SUPP";
             this.Text = "FRM_CAT";
             this.Load += new System.EventHandler(this.FRM_CAT_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tBCATBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sales_Management_SystemDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
             this.pn_cat.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBSuppliersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sales_Management_SystemDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tileView1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -308,27 +347,28 @@ namespace Sales_Management_Program.Presentation_Layer
         #endregion
 
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
-        private System.Windows.Forms.BindingSource tBCATBindingSource;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
         private DevExpress.XtraGrid.Columns.TileViewColumn colCAT_Cover;
-        private Sales_Management_SystemDataSet sales_Management_SystemDataSet;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private Sales_Management_SystemDataSetTableAdapters.TB_CATTableAdapter tB_CATTableAdapter;
         private DevExpress.XtraGrid.Columns.TileViewColumn colID;
         private DevExpress.XtraGrid.Columns.TileViewColumn colCAT_Name;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView4;
         public System.Windows.Forms.Panel pn_cat;
         private System.Windows.Forms.Panel panel2;
-        public DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Tile.TileView tileView1;
-        private DevExpress.XtraGrid.Columns.TileViewColumn colID1;
-        private DevExpress.XtraGrid.Columns.TileViewColumn colCAT_Name1;
-        private DevExpress.XtraGrid.Columns.TileViewColumn colCAT_Cover1;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
         private DevExpress.XtraEditors.SimpleButton simpleButton6;
         private System.Windows.Forms.TextBox textBox2;
+        public DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Tile.TileView tileView1;
+        private Sales_Management_SystemDataSet1 sales_Management_SystemDataSet1;
+        private System.Windows.Forms.BindingSource tBSuppliersBindingSource;
+        private Sales_Management_SystemDataSet1TableAdapters.TB_SuppliersTableAdapter tB_SuppliersTableAdapter;
+        private DevExpress.XtraGrid.Columns.TileViewColumn colSupp_Name;
+        private DevExpress.XtraGrid.Columns.TileViewColumn colSupp_Phone;
+        private DevExpress.XtraGrid.Columns.TileViewColumn colSupp_Email;
+        private DevExpress.XtraGrid.Columns.TileViewColumn colSupp_Image;
     }
 }

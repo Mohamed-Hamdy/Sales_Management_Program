@@ -8,7 +8,10 @@
         <EntityTypeShape EntityType="Sales_Management_SystemModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Sales_Management_SystemModel.TB_CAT" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="Sales_Management_SystemModel.TB_Suppliers" Width="1.5" PointX="4.75" PointY="0.75" />
-      </Diagram>
+        <EntityTypeShape EntityType="Sales_Management_SystemModel.TB_Purchases" Width="1.5" PointX="7" PointY="0.75" />
+        <AssociationConnector Association="Sales_Management_SystemModel.FK_TB_Purchases_TB_CAT" />
+        <AssociationConnector Association="Sales_Management_SystemModel.FK_TB_Purchases_TB_Suppliers" />
+        </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

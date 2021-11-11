@@ -23,6 +23,25 @@
           <Property Name="CAT_Name" Type="nvarchar" MaxLength="50" />
           <Property Name="CAT_Cover" Type="image" />
         </EntityType>
+        <EntityType Name="TB_Purchases">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Cat_id" Type="int" />
+          <Property Name="Supp_id" Type="int" />
+          <Property Name="Pur_Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Pur_Type" Type="nvarchar" MaxLength="50" />
+          <Property Name="Pur_Cat" Type="nvarchar" MaxLength="50" />
+          <Property Name="Pur_Supp" Type="nvarchar" MaxLength="50" />
+          <Property Name="Pur_Det" Type="nvarchar" MaxLength="50" />
+          <Property Name="Pur_Buy" Type="float" />
+          <Property Name="Pur_Sell" Type="float" />
+          <Property Name="Pur_Qt" Type="float" />
+          <Property Name="Pur_Tsell" Type="float" />
+          <Property Name="Pur_Tbuy" Type="float" />
+          <Property Name="Pur_TRev" Type="float" />
+        </EntityType>
         <EntityType Name="TB_Suppliers">
           <Key>
             <PropertyRef Name="ID" />
@@ -33,10 +52,43 @@
           <Property Name="Supp_Email" Type="nvarchar" MaxLength="50" />
           <Property Name="Supp_Image" Type="image" />
         </EntityType>
+        <Association Name="FK_TB_Purchases_TB_CAT">
+          <End Role="TB_CAT" Type="Self.TB_CAT" Multiplicity="0..1" />
+          <End Role="TB_Purchases" Type="Self.TB_Purchases" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_CAT">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TB_Purchases">
+              <PropertyRef Name="Cat_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_Purchases_TB_Suppliers">
+          <End Role="TB_Suppliers" Type="Self.TB_Suppliers" Multiplicity="0..1" />
+          <End Role="TB_Purchases" Type="Self.TB_Purchases" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_Suppliers">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TB_Purchases">
+              <PropertyRef Name="Supp_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <EntityContainer Name="Sales_Management_SystemModelStoreContainer">
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TB_CAT" EntityType="Self.TB_CAT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TB_Purchases" EntityType="Self.TB_Purchases" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TB_Suppliers" EntityType="Self.TB_Suppliers" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_TB_Purchases_TB_CAT" Association="Self.FK_TB_Purchases_TB_CAT">
+            <End Role="TB_CAT" EntitySet="TB_CAT" />
+            <End Role="TB_Purchases" EntitySet="TB_Purchases" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_Purchases_TB_Suppliers" Association="Self.FK_TB_Purchases_TB_Suppliers">
+            <End Role="TB_Suppliers" EntitySet="TB_Suppliers" />
+            <End Role="TB_Purchases" EntitySet="TB_Purchases" />
+          </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -59,12 +111,22 @@
           <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="CAT_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="CAT_Cover" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="TB_Purchases" Relationship="Sales_Management_SystemModel.FK_TB_Purchases_TB_CAT" FromRole="TB_CAT" ToRole="TB_Purchases" />
         </EntityType>
         <EntityContainer Name="Sales_Management_SystemEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
           <EntitySet Name="TB_CAT" EntityType="Self.TB_CAT" />
           <EntitySet Name="TB_Suppliers" EntityType="Sales_Management_SystemModel.TB_Suppliers" />
-        </EntityContainer>
+          <EntitySet Name="TB_Purchases" EntityType="Sales_Management_SystemModel.TB_Purchases" />
+          <AssociationSet Name="FK_TB_Purchases_TB_CAT" Association="Sales_Management_SystemModel.FK_TB_Purchases_TB_CAT">
+            <End Role="TB_CAT" EntitySet="TB_CAT" />
+            <End Role="TB_Purchases" EntitySet="TB_Purchases" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_Purchases_TB_Suppliers" Association="Sales_Management_SystemModel.FK_TB_Purchases_TB_Suppliers">
+            <End Role="TB_Suppliers" EntitySet="TB_Suppliers" />
+            <End Role="TB_Purchases" EntitySet="TB_Purchases" />
+          </AssociationSet>
+          </EntityContainer>
         <EntityType Name="TB_Suppliers">
           <Key>
             <PropertyRef Name="ID" />
@@ -74,8 +136,54 @@
           <Property Name="Supp_Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Supp_Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Supp_Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+          <NavigationProperty Name="TB_Purchases" Relationship="Sales_Management_SystemModel.FK_TB_Purchases_TB_Suppliers" FromRole="TB_Suppliers" ToRole="TB_Purchases" />
         </EntityType>
-      </Schema>
+        <EntityType Name="TB_Purchases">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Cat_id" Type="Int32" />
+          <Property Name="Supp_id" Type="Int32" />
+          <Property Name="Pur_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Pur_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Pur_Cat" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Pur_Supp" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Pur_Det" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Pur_Buy" Type="Double" />
+          <Property Name="Pur_Sell" Type="Double" />
+          <Property Name="Pur_Qt" Type="Double" />
+          <Property Name="Pur_Tsell" Type="Double" />
+          <Property Name="Pur_Tbuy" Type="Double" />
+          <Property Name="Pur_TRev" Type="Double" />
+          <NavigationProperty Name="TB_CAT" Relationship="Sales_Management_SystemModel.FK_TB_Purchases_TB_CAT" FromRole="TB_Purchases" ToRole="TB_CAT" />
+          <NavigationProperty Name="TB_Suppliers" Relationship="Sales_Management_SystemModel.FK_TB_Purchases_TB_Suppliers" FromRole="TB_Purchases" ToRole="TB_Suppliers" />
+        </EntityType>
+        <Association Name="FK_TB_Purchases_TB_CAT">
+          <End Type="Sales_Management_SystemModel.TB_CAT" Role="TB_CAT" Multiplicity="0..1" />
+          <End Type="Sales_Management_SystemModel.TB_Purchases" Role="TB_Purchases" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_CAT">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TB_Purchases">
+              <PropertyRef Name="Cat_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_Purchases_TB_Suppliers">
+          <End Type="Sales_Management_SystemModel.TB_Suppliers" Role="TB_Suppliers" Multiplicity="0..1" />
+          <End Type="Sales_Management_SystemModel.TB_Purchases" Role="TB_Purchases" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_Suppliers">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TB_Purchases">
+              <PropertyRef Name="Supp_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
@@ -108,6 +216,26 @@
                 <ScalarProperty Name="Supp_Email" ColumnName="Supp_Email" />
                 <ScalarProperty Name="Supp_Phone" ColumnName="Supp_Phone" />
                 <ScalarProperty Name="Supp_Name" ColumnName="Supp_Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_Purchases">
+            <EntityTypeMapping TypeName="Sales_Management_SystemModel.TB_Purchases">
+              <MappingFragment StoreEntitySet="TB_Purchases">
+                <ScalarProperty Name="Pur_TRev" ColumnName="Pur_TRev" />
+                <ScalarProperty Name="Pur_Tbuy" ColumnName="Pur_Tbuy" />
+                <ScalarProperty Name="Pur_Tsell" ColumnName="Pur_Tsell" />
+                <ScalarProperty Name="Pur_Qt" ColumnName="Pur_Qt" />
+                <ScalarProperty Name="Pur_Sell" ColumnName="Pur_Sell" />
+                <ScalarProperty Name="Pur_Buy" ColumnName="Pur_Buy" />
+                <ScalarProperty Name="Pur_Det" ColumnName="Pur_Det" />
+                <ScalarProperty Name="Pur_Supp" ColumnName="Pur_Supp" />
+                <ScalarProperty Name="Pur_Cat" ColumnName="Pur_Cat" />
+                <ScalarProperty Name="Pur_Type" ColumnName="Pur_Type" />
+                <ScalarProperty Name="Pur_Name" ColumnName="Pur_Name" />
+                <ScalarProperty Name="Supp_id" ColumnName="Supp_id" />
+                <ScalarProperty Name="Cat_id" ColumnName="Cat_id" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>

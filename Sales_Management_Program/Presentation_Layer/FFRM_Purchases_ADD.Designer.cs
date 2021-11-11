@@ -58,14 +58,12 @@ namespace Sales_Management_Program.Presentation_Layer
             this.label2 = new System.Windows.Forms.Label();
             this.edt_Type = new System.Windows.Forms.TextBox();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.edt_buy = new System.Windows.Forms.TextBox();
             this.pnadd_cont.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edt_qt.Properties)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pnadd_cont
@@ -176,7 +174,6 @@ namespace Sales_Management_Program.Presentation_Layer
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textEdit1);
             this.groupBox2.Controls.Add(this.edt_qt);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label10);
@@ -431,13 +428,6 @@ namespace Sales_Management_Program.Presentation_Layer
             this.simpleButton2.Text = "اضافة";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
-            // textEdit1
-            // 
-            this.textEdit1.Location = new System.Drawing.Point(39, 34);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(243, 20);
-            this.textEdit1.TabIndex = 33;
-            // 
             // edt_buy
             // 
             this.edt_buy.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
@@ -471,7 +461,6 @@ namespace Sales_Management_Program.Presentation_Layer
             ((System.ComponentModel.ISupportInitialize)(this.edt_qt.Properties)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -506,7 +495,6 @@ namespace Sales_Management_Program.Presentation_Layer
         public System.Windows.Forms.TextBox edt_Det;
         public System.Windows.Forms.ComboBox comboBox2;
         public System.Windows.Forms.ComboBox comboBox1;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
         public System.Windows.Forms.TextBox edt_buy;
     }
 }

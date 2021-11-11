@@ -76,7 +76,7 @@ namespace Sales_Management_Program.Presentation_Layer
                     tb_pur.Pur_Cat = comboBox1.Text;
                     tb_pur.Pur_Supp = comboBox2.Text;
                     tb_pur.Pur_Det = edt_Det.Text;
-                    tb_pur.Pur_Buy = Convert.ToDouble(textEdit1.Text);
+                    tb_pur.Pur_Buy = Convert.ToDouble(edt_buy.Text);
                     tb_pur.Pur_Sell = Convert.ToDouble(edt_sell.Text);
                     tb_pur.Pur_Qt = Convert.ToDouble(edt_qt.Text);
                     tb_pur.Pur_Tbuy = Convert.ToDouble(edt_tbuy.Text);

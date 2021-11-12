@@ -29,5 +29,6 @@ namespace Sales_Management_Program
         public virtual DbSet<TB_CAT> TB_CAT { get; set; }
         public virtual DbSet<TB_Suppliers> TB_Suppliers { get; set; }
         public virtual DbSet<TB_Purchases> TB_Purchases { get; set; }
+        public virtual DbSet<TB_Customers> TB_Customers { get; set; }
     }
 }

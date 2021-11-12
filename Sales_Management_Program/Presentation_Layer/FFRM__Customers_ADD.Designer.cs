@@ -1,7 +1,7 @@
 ﻿
 namespace Sales_Management_Program.Presentation_Layer
 {
-    partial class FFRM_SUPP_ADD
+    partial class FFRM__Customers_ADD
     {
         /// <summary>
         /// Required designer variable.
@@ -31,6 +31,9 @@ namespace Sales_Management_Program.Presentation_Layer
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FFRM__Customers_ADD));
             this.pnadd_cont = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.edt_address = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.edt_phone = new System.Windows.Forms.TextBox();
             this.edt_email = new System.Windows.Forms.TextBox();
@@ -40,13 +43,14 @@ namespace Sales_Management_Program.Presentation_Layer
             this.pic_cover = new DevExpress.XtraEditors.PictureEdit();
             this.edt_name = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.pnadd_cont.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_cover.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pnadd_cont
             // 
+            this.pnadd_cont.Controls.Add(this.label6);
+            this.pnadd_cont.Controls.Add(this.edt_address);
             this.pnadd_cont.Controls.Add(this.label5);
             this.pnadd_cont.Controls.Add(this.label3);
             this.pnadd_cont.Controls.Add(this.edt_phone);
@@ -63,6 +67,39 @@ namespace Sales_Management_Program.Presentation_Layer
             this.pnadd_cont.Size = new System.Drawing.Size(677, 661);
             this.pnadd_cont.TabIndex = 0;
             // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label6.Location = new System.Drawing.Point(558, 316);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(80, 33);
+            this.label6.TabIndex = 27;
+            this.label6.Text = "العنوان";
+            // 
+            // edt_address
+            // 
+            this.edt_address.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.edt_address.Location = new System.Drawing.Point(108, 316);
+            this.edt_address.Name = "edt_address";
+            this.edt_address.Size = new System.Drawing.Size(321, 38);
+            this.edt_address.TabIndex = 26;
+            this.edt_address.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label5.Location = new System.Drawing.Point(203, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(250, 33);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "صفحه اضافه عميل جديد";
+            // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -70,7 +107,7 @@ namespace Sales_Management_Program.Presentation_Layer
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label3.Location = new System.Drawing.Point(548, 425);
+            this.label3.Location = new System.Drawing.Point(548, 457);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 33);
             this.label3.TabIndex = 24;
@@ -128,7 +165,7 @@ namespace Sales_Management_Program.Presentation_Layer
             this.simpleButton2.Appearance.Options.UseFont = true;
             this.simpleButton2.Appearance.Options.UseForeColor = true;
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(482, 579);
+            this.simpleButton2.Location = new System.Drawing.Point(501, 579);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(164, 70);
             this.simpleButton2.TabIndex = 19;
@@ -138,11 +175,11 @@ namespace Sales_Management_Program.Presentation_Layer
             // pic_cover
             // 
             this.pic_cover.EditValue = ((object)(resources.GetObject("pic_cover.EditValue")));
-            this.pic_cover.Location = new System.Drawing.Point(108, 307);
+            this.pic_cover.Location = new System.Drawing.Point(108, 374);
             this.pic_cover.Name = "pic_cover";
             this.pic_cover.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
             this.pic_cover.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.pic_cover.Size = new System.Drawing.Size(321, 235);
+            this.pic_cover.Size = new System.Drawing.Size(321, 216);
             this.pic_cover.TabIndex = 17;
             // 
             // edt_name
@@ -163,22 +200,11 @@ namespace Sales_Management_Program.Presentation_Layer
             this.label4.ForeColor = System.Drawing.SystemColors.GrayText;
             this.label4.Location = new System.Drawing.Point(528, 95);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(118, 33);
+            this.label4.Size = new System.Drawing.Size(115, 33);
             this.label4.TabIndex = 15;
-            this.label4.Text = "اسم المورد";
+            this.label4.Text = "اسم العميل";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label5.Location = new System.Drawing.Point(203, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(248, 33);
-            this.label5.TabIndex = 25;
-            this.label5.Text = "صفحه اضافه مورد جديد";
-            // 
-            // FFRM_SUPP_ADD
+            // FFRM__Customers_ADD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -187,7 +213,7 @@ namespace Sales_Management_Program.Presentation_Layer
             this.Controls.Add(this.pnadd_cont);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FFRM_SUPP_ADD";
+            this.Name = "FFRM__Customers_ADD";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.TopMost = true;
@@ -212,5 +238,7 @@ namespace Sales_Management_Program.Presentation_Layer
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        public System.Windows.Forms.TextBox edt_address;
     }
 }

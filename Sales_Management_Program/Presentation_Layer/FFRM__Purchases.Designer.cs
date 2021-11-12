@@ -40,6 +40,8 @@ namespace Sales_Management_Program.Presentation_Layer
             this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.pn_cat = new System.Windows.Forms.Panel();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.tBPurchasesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sales_Management_SystemDataSet2 = new Sales_Management_Program.Sales_Management_SystemDataSet2();
             this.gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colPur_Name = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colPur_Type = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -59,8 +61,6 @@ namespace Sales_Management_Program.Presentation_Layer
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.tBPurchasesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sales_Management_SystemDataSet2 = new Sales_Management_Program.Sales_Management_SystemDataSet2();
             this.tB_PurchasesTableAdapter = new Sales_Management_Program.Sales_Management_SystemDataSet2TableAdapters.TB_PurchasesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
@@ -68,10 +68,10 @@ namespace Sales_Management_Program.Presentation_Layer
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
             this.pn_cat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tBPurchasesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sales_Management_SystemDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // gridView2
@@ -133,6 +133,16 @@ namespace Sales_Management_Program.Presentation_Layer
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView5});
             // 
+            // tBPurchasesBindingSource
+            // 
+            this.tBPurchasesBindingSource.DataMember = "TB_Purchases";
+            this.tBPurchasesBindingSource.DataSource = this.sales_Management_SystemDataSet2;
+            // 
+            // sales_Management_SystemDataSet2
+            // 
+            this.sales_Management_SystemDataSet2.DataSetName = "Sales_Management_SystemDataSet2";
+            this.sales_Management_SystemDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // gridView5
             // 
             this.gridView5.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.Black;
@@ -156,80 +166,102 @@ namespace Sales_Management_Program.Presentation_Layer
             // 
             // colPur_Name
             // 
+            this.colPur_Name.Caption = "اسم الماده";
             this.colPur_Name.FieldName = "Pur_Name";
             this.colPur_Name.Name = "colPur_Name";
             this.colPur_Name.Visible = true;
             this.colPur_Name.VisibleIndex = 0;
+            this.colPur_Name.Width = 78;
             // 
             // colPur_Type
             // 
+            this.colPur_Type.Caption = "نوع الماده";
             this.colPur_Type.FieldName = "Pur_Type";
             this.colPur_Type.Name = "colPur_Type";
             this.colPur_Type.Visible = true;
             this.colPur_Type.VisibleIndex = 1;
+            this.colPur_Type.Width = 78;
             // 
             // colPur_Cat
             // 
+            this.colPur_Cat.Caption = "الصنف";
             this.colPur_Cat.FieldName = "Pur_Cat";
             this.colPur_Cat.Name = "colPur_Cat";
             this.colPur_Cat.Visible = true;
             this.colPur_Cat.VisibleIndex = 2;
+            this.colPur_Cat.Width = 78;
             // 
             // colPur_Supp
             // 
+            this.colPur_Supp.Caption = "المورد";
             this.colPur_Supp.FieldName = "Pur_Supp";
             this.colPur_Supp.Name = "colPur_Supp";
             this.colPur_Supp.Visible = true;
             this.colPur_Supp.VisibleIndex = 3;
+            this.colPur_Supp.Width = 78;
             // 
             // colPur_Det
             // 
+            this.colPur_Det.Caption = "التفاصيل";
             this.colPur_Det.FieldName = "Pur_Det";
             this.colPur_Det.Name = "colPur_Det";
             this.colPur_Det.Visible = true;
             this.colPur_Det.VisibleIndex = 4;
+            this.colPur_Det.Width = 78;
             // 
             // colPur_Buy
             // 
+            this.colPur_Buy.Caption = "سعر الشراء";
             this.colPur_Buy.FieldName = "Pur_Buy";
             this.colPur_Buy.Name = "colPur_Buy";
             this.colPur_Buy.Visible = true;
             this.colPur_Buy.VisibleIndex = 5;
+            this.colPur_Buy.Width = 78;
             // 
             // colPur_Sell
             // 
+            this.colPur_Sell.Caption = "سعر البيع";
             this.colPur_Sell.FieldName = "Pur_Sell";
             this.colPur_Sell.Name = "colPur_Sell";
             this.colPur_Sell.Visible = true;
             this.colPur_Sell.VisibleIndex = 6;
+            this.colPur_Sell.Width = 78;
             // 
             // colPur_Qt
             // 
+            this.colPur_Qt.Caption = "الكمية";
             this.colPur_Qt.FieldName = "Pur_Qt";
             this.colPur_Qt.Name = "colPur_Qt";
             this.colPur_Qt.Visible = true;
             this.colPur_Qt.VisibleIndex = 7;
+            this.colPur_Qt.Width = 59;
             // 
             // colPur_Tbuy
             // 
+            this.colPur_Tbuy.Caption = "سعر الشراء الكلى";
             this.colPur_Tbuy.FieldName = "Pur_Tbuy";
             this.colPur_Tbuy.Name = "colPur_Tbuy";
             this.colPur_Tbuy.Visible = true;
             this.colPur_Tbuy.VisibleIndex = 8;
+            this.colPur_Tbuy.Width = 97;
             // 
             // colPur_Tsell
             // 
+            this.colPur_Tsell.Caption = "سعر البيع الكلى";
             this.colPur_Tsell.FieldName = "Pur_Tsell";
             this.colPur_Tsell.Name = "colPur_Tsell";
             this.colPur_Tsell.Visible = true;
             this.colPur_Tsell.VisibleIndex = 9;
+            this.colPur_Tsell.Width = 89;
             // 
             // colPur_TRev
             // 
+            this.colPur_TRev.Caption = "الربح";
             this.colPur_TRev.FieldName = "Pur_TRev";
             this.colPur_TRev.Name = "colPur_TRev";
             this.colPur_TRev.Visible = true;
             this.colPur_TRev.VisibleIndex = 10;
+            this.colPur_TRev.Width = 68;
             // 
             // panel2
             // 
@@ -317,16 +349,6 @@ namespace Sales_Management_Program.Presentation_Layer
             this.simpleButton1.Text = "اضافه صنف";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
-            // tBPurchasesBindingSource
-            // 
-            this.tBPurchasesBindingSource.DataMember = "TB_Purchases";
-            this.tBPurchasesBindingSource.DataSource = this.sales_Management_SystemDataSet2;
-            // 
-            // sales_Management_SystemDataSet2
-            // 
-            this.sales_Management_SystemDataSet2.DataSetName = "Sales_Management_SystemDataSet2";
-            this.sales_Management_SystemDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // tB_PurchasesTableAdapter
             // 
             this.tB_PurchasesTableAdapter.ClearBeforeFill = true;
@@ -348,11 +370,11 @@ namespace Sales_Management_Program.Presentation_Layer
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
             this.pn_cat.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBPurchasesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sales_Management_SystemDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tBPurchasesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sales_Management_SystemDataSet2)).EndInit();
             this.ResumeLayout(false);
 
         }

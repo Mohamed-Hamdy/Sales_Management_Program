@@ -23,6 +23,17 @@
           <Property Name="CAT_Name" Type="nvarchar" MaxLength="50" />
           <Property Name="CAT_Cover" Type="image" />
         </EntityType>
+        <EntityType Name="TB_Customers">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Cust_Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Cust_Phone" Type="nvarchar" MaxLength="50" />
+          <Property Name="Cust_Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="Cust_Address" Type="nvarchar" MaxLength="50" />
+          <Property Name="Cust_Image" Type="image" />
+        </EntityType>
         <EntityType Name="TB_Purchases">
           <Key>
             <PropertyRef Name="ID" />
@@ -79,6 +90,7 @@
         <EntityContainer Name="Sales_Management_SystemModelStoreContainer">
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TB_CAT" EntityType="Self.TB_CAT" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TB_Customers" EntityType="Self.TB_Customers" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TB_Purchases" EntityType="Self.TB_Purchases" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TB_Suppliers" EntityType="Self.TB_Suppliers" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_TB_Purchases_TB_CAT" Association="Self.FK_TB_Purchases_TB_CAT">
@@ -126,6 +138,7 @@
             <End Role="TB_Suppliers" EntitySet="TB_Suppliers" />
             <End Role="TB_Purchases" EntitySet="TB_Purchases" />
           </AssociationSet>
+          <EntitySet Name="TB_Customers" EntityType="Sales_Management_SystemModel.TB_Customers" />
           </EntityContainer>
         <EntityType Name="TB_Suppliers">
           <Key>
@@ -183,6 +196,17 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <EntityType Name="TB_Customers">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Cust_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Cust_Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Cust_Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Cust_Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Cust_Image" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -236,6 +260,18 @@
                 <ScalarProperty Name="Pur_Name" ColumnName="Pur_Name" />
                 <ScalarProperty Name="Supp_id" ColumnName="Supp_id" />
                 <ScalarProperty Name="Cat_id" ColumnName="Cat_id" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_Customers">
+            <EntityTypeMapping TypeName="Sales_Management_SystemModel.TB_Customers">
+              <MappingFragment StoreEntitySet="TB_Customers">
+                <ScalarProperty Name="Cust_Image" ColumnName="Cust_Image" />
+                <ScalarProperty Name="Cust_Address" ColumnName="Cust_Address" />
+                <ScalarProperty Name="Cust_Email" ColumnName="Cust_Email" />
+                <ScalarProperty Name="Cust_Phone" ColumnName="Cust_Phone" />
+                <ScalarProperty Name="Cust_Name" ColumnName="Cust_Name" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>

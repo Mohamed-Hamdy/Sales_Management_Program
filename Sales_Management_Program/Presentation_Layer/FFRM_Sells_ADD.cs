@@ -27,7 +27,7 @@ namespace Sales_Management_Program.Presentation_Layer
         FFRM_Sells frm_sales = new FFRM_Sells();
         TB_Sales tb_sales = new TB_Sales();
 
-        double qt_previuos, qt_new, qt_requirement , ToTal_price_var;
+        double qt_previuos, qt_new, qt_requirement;
         
         public FFRM_Sells_ADD()
         {

@@ -34,6 +34,8 @@ namespace Sales_Management_Program.Presentation_Layer
             this.NotEnouph_label = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.edt_tqt = new System.Windows.Forms.Label();
             this.edt_tsell = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -41,6 +43,9 @@ namespace Sales_Management_Program.Presentation_Layer
             this.label13 = new System.Windows.Forms.Label();
             this.edt_tbuy = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.Total_price = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.edt_qt = new DevExpress.XtraEditors.SpinEdit();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -53,17 +58,12 @@ namespace Sales_Management_Program.Presentation_Layer
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.Total_price = new System.Windows.Forms.TextBox();
-            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.pnadd_cont.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edt_qt.Properties)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnadd_cont
@@ -124,6 +124,27 @@ namespace Sales_Management_Program.Presentation_Layer
             this.groupBox3.Size = new System.Drawing.Size(397, 504);
             this.groupBox3.TabIndex = 32;
             this.groupBox3.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Teal;
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Location = new System.Drawing.Point(0, 18);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(397, 67);
+            this.panel1.TabIndex = 33;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Teal;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.75F);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(85, 7);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(201, 47);
+            this.label5.TabIndex = 33;
+            this.label5.Text = "تفاصيل المادة";
             // 
             // edt_tqt
             // 
@@ -220,6 +241,42 @@ namespace Sales_Management_Program.Presentation_Layer
             this.groupBox2.TabIndex = 32;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "معلومات البيع";
+            // 
+            // linkLabel3
+            // 
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.linkLabel3.Location = new System.Drawing.Point(264, 66);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(48, 25);
+            this.linkLabel3.TabIndex = 29;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "تعديل";
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+            // 
+            // Total_price
+            // 
+            this.Total_price.Enabled = false;
+            this.Total_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.Total_price.Location = new System.Drawing.Point(15, 208);
+            this.Total_price.Name = "Total_price";
+            this.Total_price.Size = new System.Drawing.Size(243, 31);
+            this.Total_price.TabIndex = 28;
+            this.Total_price.Text = "0";
+            this.Total_price.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.label3.Location = new System.Drawing.Point(371, 208);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(134, 33);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "السعر الكلى ";
             // 
             // edt_qt
             // 
@@ -381,63 +438,6 @@ namespace Sales_Management_Program.Presentation_Layer
             this.simpleButton2.Text = "اضافة";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
-            // label3
-            // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label3.Location = new System.Drawing.Point(371, 208);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(134, 33);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "السعر الكلى ";
-            // 
-            // Total_price
-            // 
-            this.Total_price.Enabled = false;
-            this.Total_price.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.Total_price.Location = new System.Drawing.Point(15, 208);
-            this.Total_price.Name = "Total_price";
-            this.Total_price.Size = new System.Drawing.Size(243, 31);
-            this.Total_price.TabIndex = 28;
-            this.Total_price.Text = "0";
-            this.Total_price.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // linkLabel3
-            // 
-            this.linkLabel3.AutoSize = true;
-            this.linkLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.linkLabel3.Location = new System.Drawing.Point(264, 66);
-            this.linkLabel3.Name = "linkLabel3";
-            this.linkLabel3.Size = new System.Drawing.Size(48, 25);
-            this.linkLabel3.TabIndex = 29;
-            this.linkLabel3.TabStop = true;
-            this.linkLabel3.Text = "تعديل";
-            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 30.75F);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(85, 7);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(201, 47);
-            this.label5.TabIndex = 33;
-            this.label5.Text = "تفاصيل المادة";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(0, 18);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(397, 67);
-            this.panel1.TabIndex = 33;
-            // 
             // FFRM_Sells_ADD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -456,13 +456,13 @@ namespace Sales_Management_Program.Presentation_Layer
             this.pnadd_cont.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.edt_qt.Properties)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }

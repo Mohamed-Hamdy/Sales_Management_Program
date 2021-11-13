@@ -14,6 +14,7 @@ namespace Sales_Management_Program
         Presentation_Layer.FRM_SUPP frm_supp = new Presentation_Layer.FRM_SUPP();
         Presentation_Layer.FFRM__Purchases frm_pur = new Presentation_Layer.FFRM__Purchases();
         Presentation_Layer.FRM__Customers frm_cus = new Presentation_Layer.FRM__Customers();
+        Presentation_Layer.FFRM_Sells frm_sells = new Presentation_Layer.FFRM_Sells();
 
         Sales_Management_SystemEntities1 db = new Sales_Management_SystemEntities1();
 
@@ -108,6 +109,14 @@ namespace Sales_Management_Program
             Sales_Management_SystemEntities1 db = new Sales_Management_SystemEntities1();
             frm_cus.gridControl1.DataSource = db.TB_Customers.ToList();
 
+        }
+
+        private void Sells_btn_Click(object sender, EventArgs e)
+        {
+            pn_content.Controls.Clear();
+            pn_content.Controls.Add(frm_sells.recatpanel());
+            Sales_Management_SystemEntities1 db = new Sales_Management_SystemEntities1();
+            frm_sells.gridControl1.DataSource = db.TB_Sales.ToList();
         }
     }
 }

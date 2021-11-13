@@ -284,7 +284,7 @@ namespace Sales_Management_Program.Presentation_Layer
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(147, 57);
             this.simpleButton1.TabIndex = 6;
-            this.simpleButton1.Text = "اضافه صنف";
+            this.simpleButton1.Text = "اضافه";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // FRM_CAT

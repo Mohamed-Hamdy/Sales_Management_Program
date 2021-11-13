@@ -53,6 +53,18 @@
           <Property Name="Pur_Tbuy" Type="float" />
           <Property Name="Pur_TRev" Type="float" />
         </EntityType>
+        <EntityType Name="TB_Sales">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Sell_Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sell_Cus" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sell_Price" Type="float" />
+          <Property Name="Sell_QT" Type="float" />
+          <Property Name="Sell_TPrice" Type="float" />
+          <Property Name="Sell_Date" Type="datetime" />
+        </EntityType>
         <EntityType Name="TB_Suppliers">
           <Key>
             <PropertyRef Name="ID" />
@@ -92,6 +104,7 @@
           <EntitySet Name="TB_CAT" EntityType="Self.TB_CAT" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TB_Customers" EntityType="Self.TB_Customers" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TB_Purchases" EntityType="Self.TB_Purchases" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TB_Sales" EntityType="Self.TB_Sales" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TB_Suppliers" EntityType="Self.TB_Suppliers" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_TB_Purchases_TB_CAT" Association="Self.FK_TB_Purchases_TB_CAT">
             <End Role="TB_CAT" EntitySet="TB_CAT" />
@@ -139,6 +152,7 @@
             <End Role="TB_Purchases" EntitySet="TB_Purchases" />
           </AssociationSet>
           <EntitySet Name="TB_Customers" EntityType="Sales_Management_SystemModel.TB_Customers" />
+          <EntitySet Name="TB_Sales" EntityType="Sales_Management_SystemModel.TB_Sales" />
           </EntityContainer>
         <EntityType Name="TB_Suppliers">
           <Key>
@@ -207,6 +221,18 @@
           <Property Name="Cust_Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Cust_Image" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
+        <EntityType Name="TB_Sales">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Sell_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Sell_Cus" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Sell_Price" Type="Double" />
+          <Property Name="Sell_QT" Type="Double" />
+          <Property Name="Sell_TPrice" Type="Double" />
+          <Property Name="Sell_Date" Type="DateTime" Precision="3" />
+        </EntityType>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -272,6 +298,19 @@
                 <ScalarProperty Name="Cust_Email" ColumnName="Cust_Email" />
                 <ScalarProperty Name="Cust_Phone" ColumnName="Cust_Phone" />
                 <ScalarProperty Name="Cust_Name" ColumnName="Cust_Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_Sales">
+            <EntityTypeMapping TypeName="Sales_Management_SystemModel.TB_Sales">
+              <MappingFragment StoreEntitySet="TB_Sales">
+                <ScalarProperty Name="Sell_Date" ColumnName="Sell_Date" />
+                <ScalarProperty Name="Sell_TPrice" ColumnName="Sell_TPrice" />
+                <ScalarProperty Name="Sell_QT" ColumnName="Sell_QT" />
+                <ScalarProperty Name="Sell_Price" ColumnName="Sell_Price" />
+                <ScalarProperty Name="Sell_Cus" ColumnName="Sell_Cus" />
+                <ScalarProperty Name="Sell_Name" ColumnName="Sell_Name" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>

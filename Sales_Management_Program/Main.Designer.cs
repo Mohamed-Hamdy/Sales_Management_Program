@@ -33,27 +33,27 @@ namespace Sales_Management_Program
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.label4 = new System.Windows.Forms.Label();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pn_content = new System.Windows.Forms.Panel();
             this.navbar_pn = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.main_btn = new DevExpress.XtraEditors.SimpleButton();
-            this.items_brn = new DevExpress.XtraEditors.SimpleButton();
             this.SUPP_btn = new DevExpress.XtraEditors.SimpleButton();
             this.purchases_btn = new DevExpress.XtraEditors.SimpleButton();
-            this.Customers_btn = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton19 = new DevExpress.XtraEditors.SimpleButton();
+            this.Sells_btn = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton20 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton21 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton22 = new DevExpress.XtraEditors.SimpleButton();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.items_brn = new DevExpress.XtraEditors.SimpleButton();
+            this.Customers_btn = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton21 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -84,16 +84,6 @@ namespace Sales_Management_Program
             this.panel4.Size = new System.Drawing.Size(1134, 62);
             this.panel4.TabIndex = 1;
             // 
-            // simpleButton1
-            // 
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(12, 15);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton1.Size = new System.Drawing.Size(39, 38);
-            this.simpleButton1.TabIndex = 4;
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click_1);
-            // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -104,35 +94,6 @@ namespace Sales_Management_Program
             this.label4.Size = new System.Drawing.Size(68, 25);
             this.label4.TabIndex = 4;
             this.label4.Text = "الرئيسية";
-            // 
-            // simpleButton4
-            // 
-            this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
-            this.simpleButton4.Location = new System.Drawing.Point(57, 12);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton4.Size = new System.Drawing.Size(39, 44);
-            this.simpleButton4.TabIndex = 3;
-            this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click_1);
-            // 
-            // simpleButton3
-            // 
-            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            this.simpleButton3.Location = new System.Drawing.Point(102, 12);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton3.Size = new System.Drawing.Size(39, 44);
-            this.simpleButton3.TabIndex = 2;
-            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
-            // 
-            // simpleButton2
-            // 
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(147, 13);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton2.Size = new System.Drawing.Size(39, 44);
-            this.simpleButton2.TabIndex = 1;
             // 
             // panel7
             // 
@@ -163,7 +124,7 @@ namespace Sales_Management_Program
             this.navbar_pn.Controls.Add(this.SUPP_btn);
             this.navbar_pn.Controls.Add(this.purchases_btn);
             this.navbar_pn.Controls.Add(this.Customers_btn);
-            this.navbar_pn.Controls.Add(this.simpleButton19);
+            this.navbar_pn.Controls.Add(this.Sells_btn);
             this.navbar_pn.Controls.Add(this.simpleButton20);
             this.navbar_pn.Controls.Add(this.simpleButton21);
             this.navbar_pn.Controls.Add(this.simpleButton22);
@@ -194,16 +155,6 @@ namespace Sales_Management_Program
             this.label5.TabIndex = 5;
             this.label5.Text = "Mohamed Hamdy";
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Sales_Management_Program.Properties.Resources.profile_icon1;
-            this.pictureBox3.Location = new System.Drawing.Point(67, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(115, 105);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            // 
             // label6
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -231,22 +182,6 @@ namespace Sales_Management_Program
             this.main_btn.TabIndex = 15;
             this.main_btn.Text = "الرئيسية";
             this.main_btn.Click += new System.EventHandler(this.main_btn_Click);
-            // 
-            // items_brn
-            // 
-            this.items_brn.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.items_brn.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.items_brn.Appearance.Options.UseFont = true;
-            this.items_brn.Appearance.Options.UseForeColor = true;
-            this.items_brn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("items_brn.ImageOptions.Image")));
-            this.items_brn.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.items_brn.Location = new System.Drawing.Point(6, 251);
-            this.items_brn.Name = "items_brn";
-            this.items_brn.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.items_brn.Size = new System.Drawing.Size(241, 44);
-            this.items_brn.TabIndex = 16;
-            this.items_brn.Text = "الاصناف";
-            this.items_brn.Click += new System.EventHandler(this.items_brn_Click);
             // 
             // SUPP_btn
             // 
@@ -280,36 +215,21 @@ namespace Sales_Management_Program
             this.purchases_btn.Text = "المشتريات";
             this.purchases_btn.Click += new System.EventHandler(this.purchases_btn_Click);
             // 
-            // Customers_btn
+            // Sells_btn
             // 
-            this.Customers_btn.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Customers_btn.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Customers_btn.Appearance.Options.UseFont = true;
-            this.Customers_btn.Appearance.Options.UseForeColor = true;
-            this.Customers_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton18.ImageOptions.Image")));
-            this.Customers_btn.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.Customers_btn.Location = new System.Drawing.Point(3, 412);
-            this.Customers_btn.Name = "Customers_btn";
-            this.Customers_btn.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.Customers_btn.Size = new System.Drawing.Size(241, 44);
-            this.Customers_btn.TabIndex = 19;
-            this.Customers_btn.Text = "العملاء";
-            this.Customers_btn.Click += new System.EventHandler(this.Customers_btn_Click);
-            // 
-            // simpleButton19
-            // 
-            this.simpleButton19.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton19.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.simpleButton19.Appearance.Options.UseFont = true;
-            this.simpleButton19.Appearance.Options.UseForeColor = true;
-            this.simpleButton19.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.simpleButton19.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton19.ImageOptions.SvgImage")));
-            this.simpleButton19.Location = new System.Drawing.Point(6, 462);
-            this.simpleButton19.Name = "simpleButton19";
-            this.simpleButton19.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton19.Size = new System.Drawing.Size(241, 44);
-            this.simpleButton19.TabIndex = 20;
-            this.simpleButton19.Text = "المبيعات";
+            this.Sells_btn.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sells_btn.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Sells_btn.Appearance.Options.UseFont = true;
+            this.Sells_btn.Appearance.Options.UseForeColor = true;
+            this.Sells_btn.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
+            this.Sells_btn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton19.ImageOptions.SvgImage")));
+            this.Sells_btn.Location = new System.Drawing.Point(6, 462);
+            this.Sells_btn.Name = "Sells_btn";
+            this.Sells_btn.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.Sells_btn.Size = new System.Drawing.Size(241, 44);
+            this.Sells_btn.TabIndex = 20;
+            this.Sells_btn.Text = "المبيعات";
+            this.Sells_btn.Click += new System.EventHandler(this.Sells_btn_Click);
             // 
             // simpleButton20
             // 
@@ -326,6 +246,63 @@ namespace Sales_Management_Program
             this.simpleButton20.TabIndex = 21;
             this.simpleButton20.Text = "التقارير";
             // 
+            // simpleButton22
+            // 
+            this.simpleButton22.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.simpleButton22.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.simpleButton22.Appearance.Options.UseFont = true;
+            this.simpleButton22.Appearance.Options.UseForeColor = true;
+            this.simpleButton22.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
+            this.simpleButton22.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton22.ImageOptions.SvgImage")));
+            this.simpleButton22.Location = new System.Drawing.Point(6, 622);
+            this.simpleButton22.Name = "simpleButton22";
+            this.simpleButton22.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton22.Size = new System.Drawing.Size(241, 44);
+            this.simpleButton22.TabIndex = 23;
+            this.simpleButton22.Text = "الاعدادات";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Sales_Management_Program.Properties.Resources.profile_icon1;
+            this.pictureBox3.Location = new System.Drawing.Point(67, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(115, 105);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            // 
+            // items_brn
+            // 
+            this.items_brn.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.items_brn.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.items_brn.Appearance.Options.UseFont = true;
+            this.items_brn.Appearance.Options.UseForeColor = true;
+            this.items_brn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("items_brn.ImageOptions.Image")));
+            this.items_brn.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
+            this.items_brn.Location = new System.Drawing.Point(6, 251);
+            this.items_brn.Name = "items_brn";
+            this.items_brn.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.items_brn.Size = new System.Drawing.Size(241, 44);
+            this.items_brn.TabIndex = 16;
+            this.items_brn.Text = "الاصناف";
+            this.items_brn.Click += new System.EventHandler(this.items_brn_Click);
+            // 
+            // Customers_btn
+            // 
+            this.Customers_btn.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Customers_btn.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Customers_btn.Appearance.Options.UseFont = true;
+            this.Customers_btn.Appearance.Options.UseForeColor = true;
+            this.Customers_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Customers_btn.ImageOptions.Image")));
+            this.Customers_btn.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
+            this.Customers_btn.Location = new System.Drawing.Point(3, 412);
+            this.Customers_btn.Name = "Customers_btn";
+            this.Customers_btn.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.Customers_btn.Size = new System.Drawing.Size(241, 44);
+            this.Customers_btn.TabIndex = 19;
+            this.Customers_btn.Text = "العملاء";
+            this.Customers_btn.Click += new System.EventHandler(this.Customers_btn_Click);
+            // 
             // simpleButton21
             // 
             this.simpleButton21.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -341,20 +318,44 @@ namespace Sales_Management_Program
             this.simpleButton21.TabIndex = 22;
             this.simpleButton21.Text = "المستخدمين";
             // 
-            // simpleButton22
+            // simpleButton1
             // 
-            this.simpleButton22.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton22.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.simpleButton22.Appearance.Options.UseFont = true;
-            this.simpleButton22.Appearance.Options.UseForeColor = true;
-            this.simpleButton22.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.simpleButton22.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton22.ImageOptions.SvgImage")));
-            this.simpleButton22.Location = new System.Drawing.Point(6, 622);
-            this.simpleButton22.Name = "simpleButton22";
-            this.simpleButton22.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton22.Size = new System.Drawing.Size(241, 44);
-            this.simpleButton22.TabIndex = 23;
-            this.simpleButton22.Text = "الاعدادات";
+            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(12, 15);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton1.Size = new System.Drawing.Size(39, 38);
+            this.simpleButton1.TabIndex = 4;
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click_1);
+            // 
+            // simpleButton4
+            // 
+            this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
+            this.simpleButton4.Location = new System.Drawing.Point(57, 12);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton4.Size = new System.Drawing.Size(39, 44);
+            this.simpleButton4.TabIndex = 3;
+            this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click_1);
+            // 
+            // simpleButton3
+            // 
+            this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.simpleButton3.Location = new System.Drawing.Point(102, 12);
+            this.simpleButton3.Name = "simpleButton3";
+            this.simpleButton3.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton3.Size = new System.Drawing.Size(39, 44);
+            this.simpleButton3.TabIndex = 2;
+            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.simpleButton2.Location = new System.Drawing.Point(147, 13);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton2.Size = new System.Drawing.Size(39, 44);
+            this.simpleButton2.TabIndex = 1;
             // 
             // pictureBox2
             // 
@@ -413,7 +414,7 @@ namespace Sales_Management_Program
         private DevExpress.XtraEditors.SimpleButton SUPP_btn;
         private DevExpress.XtraEditors.SimpleButton purchases_btn;
         private DevExpress.XtraEditors.SimpleButton Customers_btn;
-        private DevExpress.XtraEditors.SimpleButton simpleButton19;
+        private DevExpress.XtraEditors.SimpleButton Sells_btn;
         private DevExpress.XtraEditors.SimpleButton simpleButton20;
         private DevExpress.XtraEditors.SimpleButton simpleButton21;
         private DevExpress.XtraEditors.SimpleButton simpleButton22;

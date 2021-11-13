@@ -30,18 +30,21 @@ namespace Sales_Management_Program.Presentation_Layer
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.XtraEditors.TableLayout.TableColumnDefinition tableColumnDefinition2 = new DevExpress.XtraEditors.TableLayout.TableColumnDefinition();
-            DevExpress.XtraEditors.TableLayout.TableRowDefinition tableRowDefinition6 = new DevExpress.XtraEditors.TableLayout.TableRowDefinition();
-            DevExpress.XtraEditors.TableLayout.TableRowDefinition tableRowDefinition7 = new DevExpress.XtraEditors.TableLayout.TableRowDefinition();
-            DevExpress.XtraEditors.TableLayout.TableRowDefinition tableRowDefinition8 = new DevExpress.XtraEditors.TableLayout.TableRowDefinition();
-            DevExpress.XtraEditors.TableLayout.TableRowDefinition tableRowDefinition9 = new DevExpress.XtraEditors.TableLayout.TableRowDefinition();
-            DevExpress.XtraEditors.TableLayout.TableRowDefinition tableRowDefinition10 = new DevExpress.XtraEditors.TableLayout.TableRowDefinition();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement6 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement7 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement8 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement9 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement10 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
+            DevExpress.XtraEditors.TableLayout.TableColumnDefinition tableColumnDefinition1 = new DevExpress.XtraEditors.TableLayout.TableColumnDefinition();
+            DevExpress.XtraEditors.TableLayout.TableRowDefinition tableRowDefinition1 = new DevExpress.XtraEditors.TableLayout.TableRowDefinition();
+            DevExpress.XtraEditors.TableLayout.TableRowDefinition tableRowDefinition2 = new DevExpress.XtraEditors.TableLayout.TableRowDefinition();
+            DevExpress.XtraEditors.TableLayout.TableRowDefinition tableRowDefinition3 = new DevExpress.XtraEditors.TableLayout.TableRowDefinition();
+            DevExpress.XtraEditors.TableLayout.TableRowDefinition tableRowDefinition4 = new DevExpress.XtraEditors.TableLayout.TableRowDefinition();
+            DevExpress.XtraEditors.TableLayout.TableRowDefinition tableRowDefinition5 = new DevExpress.XtraEditors.TableLayout.TableRowDefinition();
+            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement1 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
+            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement2 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
+            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement3 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
+            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement4 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
+            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement5 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM__Customers));
+            this.colCust_Name = new DevExpress.XtraGrid.Columns.TileViewColumn();
+            this.colCust_Phone = new DevExpress.XtraGrid.Columns.TileViewColumn();
+            this.colCust_Email = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.colCust_Address = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.colCust_Image = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -56,9 +59,6 @@ namespace Sales_Management_Program.Presentation_Layer
             this.tBCustomersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sales_Management_SystemDataSet3 = new Sales_Management_Program.Sales_Management_SystemDataSet3();
             this.tileView1 = new DevExpress.XtraGrid.Views.Tile.TileView();
-            this.colCust_Name = new DevExpress.XtraGrid.Columns.TileViewColumn();
-            this.colCust_Phone = new DevExpress.XtraGrid.Columns.TileViewColumn();
-            this.colCust_Email = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -78,6 +78,27 @@ namespace Sales_Management_Program.Presentation_Layer
             ((System.ComponentModel.ISupportInitialize)(this.tileView1)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // colCust_Name
+            // 
+            this.colCust_Name.FieldName = "Cust_Name";
+            this.colCust_Name.Name = "colCust_Name";
+            this.colCust_Name.Visible = true;
+            this.colCust_Name.VisibleIndex = 0;
+            // 
+            // colCust_Phone
+            // 
+            this.colCust_Phone.FieldName = "Cust_Phone";
+            this.colCust_Phone.Name = "colCust_Phone";
+            this.colCust_Phone.Visible = true;
+            this.colCust_Phone.VisibleIndex = 1;
+            // 
+            // colCust_Email
+            // 
+            this.colCust_Email.FieldName = "Cust_Email";
+            this.colCust_Email.Name = "colCust_Email";
+            this.colCust_Email.Visible = true;
+            this.colCust_Email.VisibleIndex = 2;
             // 
             // colCust_Address
             // 
@@ -176,75 +197,54 @@ namespace Sales_Management_Program.Presentation_Layer
             this.tileView1.OptionsTiles.LayoutMode = DevExpress.XtraGrid.Views.Tile.TileViewLayoutMode.Kanban;
             this.tileView1.OptionsTiles.RowCount = 0;
             this.tileView1.OptionsTiles.VerticalContentAlignment = DevExpress.Utils.VertAlignment.Top;
-            tableColumnDefinition2.Length.Value = 113D;
-            this.tileView1.TileColumns.Add(tableColumnDefinition2);
-            tableRowDefinition6.Length.Value = 48D;
-            tableRowDefinition7.Length.Value = 47D;
-            tableRowDefinition8.Length.Value = 37D;
-            tableRowDefinition9.Length.Value = 47D;
-            tableRowDefinition10.Length.Value = 97D;
-            this.tileView1.TileRows.Add(tableRowDefinition6);
-            this.tileView1.TileRows.Add(tableRowDefinition7);
-            this.tileView1.TileRows.Add(tableRowDefinition8);
-            this.tileView1.TileRows.Add(tableRowDefinition9);
-            this.tileView1.TileRows.Add(tableRowDefinition10);
-            tileViewItemElement6.Appearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F);
-            tileViewItemElement6.Appearance.Normal.Options.UseFont = true;
-            tileViewItemElement6.Column = this.colCust_Name;
-            tileViewItemElement6.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement6.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileViewItemElement6.Text = "colCust_Name";
-            tileViewItemElement6.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement7.Column = this.colCust_Phone;
-            tileViewItemElement7.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement7.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileViewItemElement7.RowIndex = 1;
-            tileViewItemElement7.Text = "colCust_Phone";
-            tileViewItemElement7.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement8.Column = this.colCust_Email;
-            tileViewItemElement8.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement8.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileViewItemElement8.RowIndex = 2;
-            tileViewItemElement8.Text = "colCust_Email";
-            tileViewItemElement8.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement9.Column = this.colCust_Address;
-            tileViewItemElement9.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement9.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileViewItemElement9.RowIndex = 3;
-            tileViewItemElement9.Text = "colCust_Address";
-            tileViewItemElement9.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement10.Column = this.colCust_Image;
-            tileViewItemElement10.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement10.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileViewItemElement10.RowIndex = 4;
-            tileViewItemElement10.Text = "colCust_Image";
-            tileViewItemElement10.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tileView1.TileTemplate.Add(tileViewItemElement6);
-            this.tileView1.TileTemplate.Add(tileViewItemElement7);
-            this.tileView1.TileTemplate.Add(tileViewItemElement8);
-            this.tileView1.TileTemplate.Add(tileViewItemElement9);
-            this.tileView1.TileTemplate.Add(tileViewItemElement10);
-            // 
-            // colCust_Name
-            // 
-            this.colCust_Name.FieldName = "Cust_Name";
-            this.colCust_Name.Name = "colCust_Name";
-            this.colCust_Name.Visible = true;
-            this.colCust_Name.VisibleIndex = 0;
-            // 
-            // colCust_Phone
-            // 
-            this.colCust_Phone.FieldName = "Cust_Phone";
-            this.colCust_Phone.Name = "colCust_Phone";
-            this.colCust_Phone.Visible = true;
-            this.colCust_Phone.VisibleIndex = 1;
-            // 
-            // colCust_Email
-            // 
-            this.colCust_Email.FieldName = "Cust_Email";
-            this.colCust_Email.Name = "colCust_Email";
-            this.colCust_Email.Visible = true;
-            this.colCust_Email.VisibleIndex = 2;
+            tableColumnDefinition1.Length.Value = 113D;
+            this.tileView1.TileColumns.Add(tableColumnDefinition1);
+            tableRowDefinition1.Length.Value = 48D;
+            tableRowDefinition2.Length.Value = 47D;
+            tableRowDefinition3.Length.Value = 37D;
+            tableRowDefinition4.Length.Value = 47D;
+            tableRowDefinition5.Length.Value = 97D;
+            this.tileView1.TileRows.Add(tableRowDefinition1);
+            this.tileView1.TileRows.Add(tableRowDefinition2);
+            this.tileView1.TileRows.Add(tableRowDefinition3);
+            this.tileView1.TileRows.Add(tableRowDefinition4);
+            this.tileView1.TileRows.Add(tableRowDefinition5);
+            tileViewItemElement1.Appearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F);
+            tileViewItemElement1.Appearance.Normal.Options.UseFont = true;
+            tileViewItemElement1.Column = this.colCust_Name;
+            tileViewItemElement1.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileViewItemElement1.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileViewItemElement1.Text = "colCust_Name";
+            tileViewItemElement1.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileViewItemElement2.Column = this.colCust_Phone;
+            tileViewItemElement2.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileViewItemElement2.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileViewItemElement2.RowIndex = 1;
+            tileViewItemElement2.Text = "colCust_Phone";
+            tileViewItemElement2.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileViewItemElement3.Column = this.colCust_Email;
+            tileViewItemElement3.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileViewItemElement3.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileViewItemElement3.RowIndex = 2;
+            tileViewItemElement3.Text = "colCust_Email";
+            tileViewItemElement3.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileViewItemElement4.Column = this.colCust_Address;
+            tileViewItemElement4.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileViewItemElement4.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileViewItemElement4.RowIndex = 3;
+            tileViewItemElement4.Text = "colCust_Address";
+            tileViewItemElement4.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileViewItemElement5.Column = this.colCust_Image;
+            tileViewItemElement5.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            tileViewItemElement5.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
+            tileViewItemElement5.RowIndex = 4;
+            tileViewItemElement5.Text = "colCust_Image";
+            tileViewItemElement5.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
+            this.tileView1.TileTemplate.Add(tileViewItemElement1);
+            this.tileView1.TileTemplate.Add(tileViewItemElement2);
+            this.tileView1.TileTemplate.Add(tileViewItemElement3);
+            this.tileView1.TileTemplate.Add(tileViewItemElement4);
+            this.tileView1.TileTemplate.Add(tileViewItemElement5);
             // 
             // panel2
             // 
@@ -329,7 +329,7 @@ namespace Sales_Management_Program.Presentation_Layer
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(147, 57);
             this.simpleButton1.TabIndex = 6;
-            this.simpleButton1.Text = "اضافه صنف";
+            this.simpleButton1.Text = "اضافه";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // tB_CustomersTableAdapter

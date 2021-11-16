@@ -13,6 +13,7 @@
         <AssociationConnector Association="Sales_Management_SystemModel.FK_TB_Purchases_TB_Suppliers" />
         <EntityTypeShape EntityType="Sales_Management_SystemModel.TB_Customers" Width="1.5" PointX="0.75" PointY="3.75" />
         <EntityTypeShape EntityType="Sales_Management_SystemModel.TB_Sales" Width="1.5" PointX="3.375" PointY="3.75" />
+        <EntityTypeShape EntityType="Sales_Management_SystemModel.TB_Users" Width="1.5" PointX="5.25" PointY="4" />
         </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

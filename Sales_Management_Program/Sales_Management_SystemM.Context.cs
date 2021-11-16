@@ -31,5 +31,6 @@ namespace Sales_Management_Program
         public virtual DbSet<TB_Purchases> TB_Purchases { get; set; }
         public virtual DbSet<TB_Customers> TB_Customers { get; set; }
         public virtual DbSet<TB_Sales> TB_Sales { get; set; }
+        public virtual DbSet<TB_Users> TB_Users { get; set; }
     }
 }

@@ -16,6 +16,7 @@ namespace Sales_Management_Program
         Presentation_Layer.FRM__Customers frm_cus = new Presentation_Layer.FRM__Customers();
         Presentation_Layer.FFRM_Sells frm_sells = new Presentation_Layer.FFRM_Sells();
         Presentation_Layer.FRM_Reports frm_reports = new Presentation_Layer.FRM_Reports();
+        Presentation_Layer.FFRM_Users frm_users = new Presentation_Layer.FFRM_Users();
 
         Sales_Management_SystemEntities1 db = new Sales_Management_SystemEntities1();
 
@@ -43,24 +44,10 @@ namespace Sales_Management_Program
         private void simpleButton3_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
-        }
-
-
-        private void navbarminmax_btn_Click(object sender, EventArgs e)
-        {
-            if (navbar_pn.Width >= 250)
-            {
-                navbar_pn.Width = 70;
-                panel8.Visible = false;
-
-            }
-            else
-            {
-                navbar_pn.Width = 250;
-                panel8.Visible = true;
-            }
 
         }
+
+
         private void Main_Load(object sender, EventArgs e)
         {
             pn_content.Controls.Clear();
@@ -126,6 +113,105 @@ namespace Sales_Management_Program
             pn_content.Controls.Add(frm_reports.pn_cat);
             Sales_Management_SystemEntities1 db = new Sales_Management_SystemEntities1();
             frm_sells.gridControl1.DataSource = db.TB_Sales.ToList();
+        }
+
+        private void navbarminmax_Click(object sender, EventArgs e)
+        {
+            if (navbar_pn.Width >= 250)
+            {
+                navbar_pn.Width = 70;
+                panel8.Visible = false;
+                
+                main_btn.Text = String.Empty;
+                main_btn.Width = 70;
+                main_btn.ImageOptions.Location =  ImageLocation.MiddleCenter;
+                
+                items_brn.Text = String.Empty;
+                items_brn.Width = 70;
+                items_brn.ImageOptions.Location = ImageLocation.MiddleCenter;
+
+                SUPP_btn.Text = String.Empty;
+                SUPP_btn.Width = 70;
+                SUPP_btn.ImageOptions.Location = ImageLocation.MiddleCenter;
+
+                purchases_btn.Text = String.Empty;
+                purchases_btn.Width = 70;
+                purchases_btn.ImageOptions.Location = ImageLocation.MiddleCenter;
+
+                Customers_btn.Text = String.Empty;
+                Customers_btn.Width = 70;
+                Customers_btn.ImageOptions.Location = ImageLocation.MiddleCenter;
+
+                Sells_btn.Text = String.Empty;
+                Sells_btn.Width = 70;
+                Sells_btn.ImageOptions.Location = ImageLocation.MiddleCenter;
+
+                btn_reports.Text = String.Empty;
+                btn_reports.Width = 70;
+                btn_reports.ImageOptions.Location = ImageLocation.MiddleCenter;
+
+                users_btn.Text = String.Empty;
+                users_btn.Width = 70;
+                users_btn.ImageOptions.Location = ImageLocation.MiddleCenter;
+
+                Setting_btn.Text = String.Empty;
+                Setting_btn.Width = 70;
+                Setting_btn.ImageOptions.Location = ImageLocation.MiddleCenter;
+
+            }
+            else
+            {
+                navbar_pn.Width = 250;
+                panel8.Visible = true;
+
+                main_btn.Text = "الرئيسية";
+                main_btn.Width = 250;
+                main_btn.ImageOptions.Location = ImageLocation.MiddleRight;
+
+                items_brn.Text = "الاصناف";
+                items_brn.Width = 250;
+                items_brn.ImageOptions.Location = ImageLocation.MiddleRight;
+
+                SUPP_btn.Text = "الموردين";
+                SUPP_btn.Width = 250;
+                SUPP_btn.ImageOptions.Location = ImageLocation.MiddleRight;
+
+                purchases_btn.Text = "المشتريات";
+                purchases_btn.Width = 250;
+                purchases_btn.ImageOptions.Location = ImageLocation.MiddleRight;
+
+                Customers_btn.Text = "العملاء";
+                Customers_btn.Width = 250;
+                Customers_btn.ImageOptions.Location = ImageLocation.MiddleRight;
+
+                Sells_btn.Text = "المبيعات";
+                Sells_btn.Width = 250;
+                Sells_btn.ImageOptions.Location = ImageLocation.MiddleRight;
+
+                btn_reports.Text = "التقارير";
+                btn_reports.Width = 250;
+                btn_reports.ImageOptions.Location = ImageLocation.MiddleRight;
+
+                users_btn.Text = "المستخدمين";
+                users_btn.Width = 250;
+                users_btn.ImageOptions.Location = ImageLocation.MiddleRight;
+
+                Setting_btn.Text = "الاعدادات";
+                Setting_btn.Width = 250;
+                Setting_btn.ImageOptions.Location = ImageLocation.MiddleRight;
+
+
+            }
+
+        }
+
+        private void users_btn_Click(object sender, EventArgs e)
+        {
+
+            pn_content.Controls.Clear();
+            pn_content.Controls.Add(frm_users.pn_cat);
+            Sales_Management_SystemEntities1 db = new Sales_Management_SystemEntities1();
+            frm_users.gridControl1.DataSource = db.TB_Users.ToList();
         }
     }
 }

@@ -75,6 +75,16 @@
           <Property Name="Supp_Email" Type="nvarchar" MaxLength="50" />
           <Property Name="Supp_Image" Type="image" />
         </EntityType>
+        <EntityType Name="TB_Users">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="User_Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="User_Password" Type="nvarchar" MaxLength="50" />
+          <Property Name="User_Roll" Type="nvarchar" MaxLength="50" />
+          <Property Name="User_State" Type="nvarchar" MaxLength="50" />
+        </EntityType>
         <Association Name="FK_TB_Purchases_TB_CAT">
           <End Role="TB_CAT" Type="Self.TB_CAT" Multiplicity="0..1" />
           <End Role="TB_Purchases" Type="Self.TB_Purchases" Multiplicity="*" />
@@ -106,6 +116,7 @@
           <EntitySet Name="TB_Purchases" EntityType="Self.TB_Purchases" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TB_Sales" EntityType="Self.TB_Sales" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="TB_Suppliers" EntityType="Self.TB_Suppliers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TB_Users" EntityType="Self.TB_Users" Schema="dbo" store:Type="Tables" />
           <AssociationSet Name="FK_TB_Purchases_TB_CAT" Association="Self.FK_TB_Purchases_TB_CAT">
             <End Role="TB_CAT" EntitySet="TB_CAT" />
             <End Role="TB_Purchases" EntitySet="TB_Purchases" />
@@ -153,6 +164,7 @@
           </AssociationSet>
           <EntitySet Name="TB_Customers" EntityType="Sales_Management_SystemModel.TB_Customers" />
           <EntitySet Name="TB_Sales" EntityType="Sales_Management_SystemModel.TB_Sales" />
+          <EntitySet Name="TB_Users" EntityType="Sales_Management_SystemModel.TB_Users" />
           </EntityContainer>
         <EntityType Name="TB_Suppliers">
           <Key>
@@ -233,6 +245,16 @@
           <Property Name="Sell_TPrice" Type="Double" />
           <Property Name="Sell_Date" Type="DateTime" Precision="3" />
         </EntityType>
+        <EntityType Name="TB_Users">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="User_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="User_Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="User_Roll" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="User_State" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -311,6 +333,17 @@
                 <ScalarProperty Name="Sell_Price" ColumnName="Sell_Price" />
                 <ScalarProperty Name="Sell_Cus" ColumnName="Sell_Cus" />
                 <ScalarProperty Name="Sell_Name" ColumnName="Sell_Name" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_Users">
+            <EntityTypeMapping TypeName="Sales_Management_SystemModel.TB_Users">
+              <MappingFragment StoreEntitySet="TB_Users">
+                <ScalarProperty Name="User_State" ColumnName="User_State" />
+                <ScalarProperty Name="User_Roll" ColumnName="User_Roll" />
+                <ScalarProperty Name="User_Password" ColumnName="User_Password" />
+                <ScalarProperty Name="User_Name" ColumnName="User_Name" />
                 <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>

@@ -1,7 +1,7 @@
 ﻿
 namespace Sales_Management_Program.Presentation_Layer
 {
-    partial class FRM_CAT
+    partial class FFRM_Users
     {
         /// <summary>
         /// Required designer variable.
@@ -30,28 +30,17 @@ namespace Sales_Management_Program.Presentation_Layer
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_CAT));
-            DevExpress.XtraEditors.TableLayout.TableColumnDefinition tableColumnDefinition1 = new DevExpress.XtraEditors.TableLayout.TableColumnDefinition();
-            DevExpress.XtraEditors.TableLayout.TableRowDefinition tableRowDefinition1 = new DevExpress.XtraEditors.TableLayout.TableRowDefinition();
-            DevExpress.XtraEditors.TableLayout.TableRowDefinition tableRowDefinition2 = new DevExpress.XtraEditors.TableLayout.TableRowDefinition();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement1 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
-            DevExpress.XtraGrid.Views.Tile.TileViewItemElement tileViewItemElement2 = new DevExpress.XtraGrid.Views.Tile.TileViewItemElement();
-            this.colCAT_Name1 = new DevExpress.XtraGrid.Columns.TileViewColumn();
-            this.colCAT_Cover1 = new DevExpress.XtraGrid.Columns.TileViewColumn();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FFRM_Users));
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.tBCATBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.colCAT_Cover = new DevExpress.XtraGrid.Columns.TileViewColumn();
-            this.sales_Management_SystemDataSet = new Sales_Management_Program.Sales_Management_SystemDataSet();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.tB_CATTableAdapter = new Sales_Management_Program.Sales_Management_SystemDataSetTableAdapters.TB_CATTableAdapter();
             this.colID = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.colCAT_Name = new DevExpress.XtraGrid.Columns.TileViewColumn();
             this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.pn_cat = new System.Windows.Forms.Panel();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.tileView1 = new DevExpress.XtraGrid.Views.Tile.TileView();
-            this.colID1 = new DevExpress.XtraGrid.Columns.TileViewColumn();
+            this.gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -59,31 +48,24 @@ namespace Sales_Management_Program.Presentation_Layer
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.sales_Management_SystemDataSet5 = new Sales_Management_Program.Sales_Management_SystemDataSet5();
+            this.tBUsersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tB_UsersTableAdapter = new Sales_Management_Program.Sales_Management_SystemDataSet5TableAdapters.TB_UsersTableAdapter();
+            this.colUser_Name = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colUser_Password = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colUser_Roll = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colUser_State = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tBCATBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sales_Management_SystemDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
             this.pn_cat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tileView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sales_Management_SystemDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBUsersBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // colCAT_Name1
-            // 
-            this.colCAT_Name1.FieldName = "CAT_Name";
-            this.colCAT_Name1.Name = "colCAT_Name1";
-            this.colCAT_Name1.Visible = true;
-            this.colCAT_Name1.VisibleIndex = 1;
-            // 
-            // colCAT_Cover1
-            // 
-            this.colCAT_Cover1.FieldName = "CAT_Cover";
-            this.colCAT_Cover1.Name = "colCAT_Cover1";
-            this.colCAT_Cover1.Visible = true;
-            this.colCAT_Cover1.VisibleIndex = 2;
             // 
             // gridView2
             // 
@@ -93,10 +75,6 @@ namespace Sales_Management_Program.Presentation_Layer
             // 
             this.gridView3.Name = "gridView3";
             // 
-            // tBCATBindingSource
-            // 
-            this.tBCATBindingSource.DataMember = "TB_CAT";
-            // 
             // colCAT_Cover
             // 
             this.colCAT_Cover.FieldName = "CAT_Cover";
@@ -104,18 +82,9 @@ namespace Sales_Management_Program.Presentation_Layer
             this.colCAT_Cover.Visible = true;
             this.colCAT_Cover.VisibleIndex = 2;
             // 
-            // sales_Management_SystemDataSet
-            // 
-            this.sales_Management_SystemDataSet.DataSetName = "Sales_Management_SystemDataSet";
-            this.sales_Management_SystemDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // gridView1
             // 
             this.gridView1.Name = "gridView1";
-            // 
-            // tB_CATTableAdapter
-            // 
-            this.tB_CATTableAdapter.ClearBeforeFill = true;
             // 
             // colID
             // 
@@ -147,60 +116,27 @@ namespace Sales_Management_Program.Presentation_Layer
             // 
             // gridControl1
             // 
-            this.gridControl1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gridControl1.BackgroundImage")));
-            this.gridControl1.DataSource = this.tBCATBindingSource;
+            this.gridControl1.DataSource = this.tBUsersBindingSource;
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
-            this.gridControl1.MainView = this.tileView1;
+            this.gridControl1.MainView = this.gridView5;
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.Size = new System.Drawing.Size(884, 589);
-            this.gridControl1.TabIndex = 21;
+            this.gridControl1.TabIndex = 34;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.tileView1});
+            this.gridView5});
             // 
-            // tileView1
+            // gridView5
             // 
-            this.tileView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colID1,
-            this.colCAT_Name1,
-            this.colCAT_Cover1});
-            this.tileView1.GridControl = this.gridControl1;
-            this.tileView1.Name = "tileView1";
-            this.tileView1.OptionsTiles.GroupTextPadding = new System.Windows.Forms.Padding(12, 8, 12, 8);
-            this.tileView1.OptionsTiles.IndentBetweenGroups = 0;
-            this.tileView1.OptionsTiles.IndentBetweenItems = 0;
-            this.tileView1.OptionsTiles.ItemSize = new System.Drawing.Size(236, 182);
-            this.tileView1.OptionsTiles.LayoutMode = DevExpress.XtraGrid.Views.Tile.TileViewLayoutMode.Kanban;
-            this.tileView1.OptionsTiles.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.tileView1.OptionsTiles.Padding = new System.Windows.Forms.Padding(0);
-            this.tileView1.OptionsTiles.RowCount = 0;
-            this.tileView1.TileColumns.Add(tableColumnDefinition1);
-            tableRowDefinition1.Length.Value = 47D;
-            tableRowDefinition2.Length.Value = 111D;
-            this.tileView1.TileRows.Add(tableRowDefinition1);
-            this.tileView1.TileRows.Add(tableRowDefinition2);
-            tileViewItemElement1.Appearance.Normal.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            tileViewItemElement1.Appearance.Normal.Options.UseFont = true;
-            tileViewItemElement1.Column = this.colCAT_Name1;
-            tileViewItemElement1.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement1.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileViewItemElement1.Text = "colCAT_Name1";
-            tileViewItemElement1.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement2.Column = this.colCAT_Cover1;
-            tileViewItemElement2.ImageOptions.ImageAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            tileViewItemElement2.ImageOptions.ImageScaleMode = DevExpress.XtraEditors.TileItemImageScaleMode.ZoomInside;
-            tileViewItemElement2.RowIndex = 1;
-            tileViewItemElement2.Text = "colCAT_Cover1";
-            tileViewItemElement2.TextAlignment = DevExpress.XtraEditors.TileItemContentAlignment.MiddleCenter;
-            this.tileView1.TileTemplate.Add(tileViewItemElement1);
-            this.tileView1.TileTemplate.Add(tileViewItemElement2);
-            // 
-            // colID1
-            // 
-            this.colID1.FieldName = "ID";
-            this.colID1.Name = "colID1";
-            this.colID1.Visible = true;
-            this.colID1.VisibleIndex = 0;
+            this.gridView5.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.Black;
+            this.gridView5.Appearance.ColumnFilterButton.Options.UseBackColor = true;
+            this.gridView5.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.colUser_Name,
+            this.colUser_Password,
+            this.colUser_Roll,
+            this.colUser_State});
+            this.gridView5.GridControl = this.gridControl1;
+            this.gridView5.Name = "gridView5";
             // 
             // panel2
             // 
@@ -288,7 +224,53 @@ namespace Sales_Management_Program.Presentation_Layer
             this.simpleButton1.Text = "اضافه";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
-            // FRM_CAT
+            // sales_Management_SystemDataSet5
+            // 
+            this.sales_Management_SystemDataSet5.DataSetName = "Sales_Management_SystemDataSet5";
+            this.sales_Management_SystemDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tBUsersBindingSource
+            // 
+            this.tBUsersBindingSource.DataMember = "TB_Users";
+            this.tBUsersBindingSource.DataSource = this.sales_Management_SystemDataSet5;
+            // 
+            // tB_UsersTableAdapter
+            // 
+            this.tB_UsersTableAdapter.ClearBeforeFill = true;
+            // 
+            // colUser_Name
+            // 
+            this.colUser_Name.Caption = "اسم المستخدم";
+            this.colUser_Name.FieldName = "User_Name";
+            this.colUser_Name.Name = "colUser_Name";
+            this.colUser_Name.Visible = true;
+            this.colUser_Name.VisibleIndex = 0;
+            // 
+            // colUser_Password
+            // 
+            this.colUser_Password.Caption = "الرقم السرى";
+            this.colUser_Password.FieldName = "User_Password";
+            this.colUser_Password.Name = "colUser_Password";
+            this.colUser_Password.Visible = true;
+            this.colUser_Password.VisibleIndex = 1;
+            // 
+            // colUser_Roll
+            // 
+            this.colUser_Roll.Caption = "الصلاحية";
+            this.colUser_Roll.FieldName = "User_Roll";
+            this.colUser_Roll.Name = "colUser_Roll";
+            this.colUser_Roll.Visible = true;
+            this.colUser_Roll.VisibleIndex = 2;
+            // 
+            // colUser_State
+            // 
+            this.colUser_State.Caption = "حاله الدخول";
+            this.colUser_State.FieldName = "User_State";
+            this.colUser_State.Name = "colUser_State";
+            this.colUser_State.Visible = true;
+            this.colUser_State.VisibleIndex = 3;
+            // 
+            // FFRM_Users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -296,20 +278,20 @@ namespace Sales_Management_Program.Presentation_Layer
             this.ClientSize = new System.Drawing.Size(884, 685);
             this.Controls.Add(this.pn_cat);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FRM_CAT";
+            this.Name = "FFRM_Users";
             this.Text = "FRM_CAT";
             this.Load += new System.EventHandler(this.FRM_CAT_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tBCATBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sales_Management_SystemDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
             this.pn_cat.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tileView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sales_Management_SystemDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBUsersBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -317,27 +299,28 @@ namespace Sales_Management_Program.Presentation_Layer
         #endregion
 
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
-        private System.Windows.Forms.BindingSource tBCATBindingSource;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
         private DevExpress.XtraGrid.Columns.TileViewColumn colCAT_Cover;
-        private Sales_Management_SystemDataSet sales_Management_SystemDataSet;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private Sales_Management_SystemDataSetTableAdapters.TB_CATTableAdapter tB_CATTableAdapter;
         private DevExpress.XtraGrid.Columns.TileViewColumn colID;
         private DevExpress.XtraGrid.Columns.TileViewColumn colCAT_Name;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView4;
         public System.Windows.Forms.Panel pn_cat;
         private System.Windows.Forms.Panel panel2;
-        public DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Tile.TileView tileView1;
-        private DevExpress.XtraGrid.Columns.TileViewColumn colID1;
-        private DevExpress.XtraGrid.Columns.TileViewColumn colCAT_Name1;
-        private DevExpress.XtraGrid.Columns.TileViewColumn colCAT_Cover1;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
         private DevExpress.XtraEditors.SimpleButton simpleButton6;
         private System.Windows.Forms.TextBox textBox2;
+        public DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridView5;
+        private Sales_Management_SystemDataSet5 sales_Management_SystemDataSet5;
+        private System.Windows.Forms.BindingSource tBUsersBindingSource;
+        private Sales_Management_SystemDataSet5TableAdapters.TB_UsersTableAdapter tB_UsersTableAdapter;
+        private DevExpress.XtraGrid.Columns.GridColumn colUser_Name;
+        private DevExpress.XtraGrid.Columns.GridColumn colUser_Password;
+        private DevExpress.XtraGrid.Columns.GridColumn colUser_Roll;
+        private DevExpress.XtraGrid.Columns.GridColumn colUser_State;
     }
 }

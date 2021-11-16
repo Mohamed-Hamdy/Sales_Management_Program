@@ -36,20 +36,21 @@ namespace Sales_Management_Program
             this.label4 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pn_content = new System.Windows.Forms.Panel();
-            this.navbar_pn = new System.Windows.Forms.Panel();
+            this.Setting_btn = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_reports = new DevExpress.XtraEditors.SimpleButton();
+            this.Sells_btn = new DevExpress.XtraEditors.SimpleButton();
+            this.purchases_btn = new DevExpress.XtraEditors.SimpleButton();
+            this.SUPP_btn = new DevExpress.XtraEditors.SimpleButton();
+            this.main_btn = new DevExpress.XtraEditors.SimpleButton();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.main_btn = new DevExpress.XtraEditors.SimpleButton();
-            this.SUPP_btn = new DevExpress.XtraEditors.SimpleButton();
-            this.purchases_btn = new DevExpress.XtraEditors.SimpleButton();
-            this.Sells_btn = new DevExpress.XtraEditors.SimpleButton();
-            this.btn_reports = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton22 = new DevExpress.XtraEditors.SimpleButton();
+            this.navbar_pn = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.items_brn = new DevExpress.XtraEditors.SimpleButton();
             this.Customers_btn = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton21 = new DevExpress.XtraEditors.SimpleButton();
+            this.users_btn = new DevExpress.XtraEditors.SimpleButton();
+            this.navbarminmax = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
@@ -57,8 +58,8 @@ namespace Sales_Management_Program
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.navbar_pn.SuspendLayout();
             this.panel8.SuspendLayout();
+            this.navbar_pn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -73,6 +74,7 @@ namespace Sales_Management_Program
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.panel4.Controls.Add(this.navbarminmax);
             this.panel4.Controls.Add(this.simpleButton1);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.simpleButton4);
@@ -110,29 +112,106 @@ namespace Sales_Management_Program
             this.pn_content.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.pn_content.BackColor = System.Drawing.Color.White;
             this.pn_content.Location = new System.Drawing.Point(0, 0);
             this.pn_content.Name = "pn_content";
             this.pn_content.Size = new System.Drawing.Size(884, 691);
             this.pn_content.TabIndex = 0;
             // 
-            // navbar_pn
+            // Setting_btn
             // 
-            this.navbar_pn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.navbar_pn.Controls.Add(this.panel8);
-            this.navbar_pn.Controls.Add(this.main_btn);
-            this.navbar_pn.Controls.Add(this.items_brn);
-            this.navbar_pn.Controls.Add(this.SUPP_btn);
-            this.navbar_pn.Controls.Add(this.purchases_btn);
-            this.navbar_pn.Controls.Add(this.Customers_btn);
-            this.navbar_pn.Controls.Add(this.Sells_btn);
-            this.navbar_pn.Controls.Add(this.btn_reports);
-            this.navbar_pn.Controls.Add(this.simpleButton21);
-            this.navbar_pn.Controls.Add(this.simpleButton22);
-            this.navbar_pn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.navbar_pn.Location = new System.Drawing.Point(884, 62);
-            this.navbar_pn.Name = "navbar_pn";
-            this.navbar_pn.Size = new System.Drawing.Size(250, 691);
-            this.navbar_pn.TabIndex = 0;
+            this.Setting_btn.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Setting_btn.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Setting_btn.Appearance.Options.UseFont = true;
+            this.Setting_btn.Appearance.Options.UseForeColor = true;
+            this.Setting_btn.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
+            this.Setting_btn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("Setting_btn.ImageOptions.SvgImage")));
+            this.Setting_btn.Location = new System.Drawing.Point(6, 635);
+            this.Setting_btn.Name = "Setting_btn";
+            this.Setting_btn.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.Setting_btn.Size = new System.Drawing.Size(241, 44);
+            this.Setting_btn.TabIndex = 23;
+            this.Setting_btn.Text = "الاعدادات";
+            // 
+            // btn_reports
+            // 
+            this.btn_reports.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_reports.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_reports.Appearance.Options.UseFont = true;
+            this.btn_reports.Appearance.Options.UseForeColor = true;
+            this.btn_reports.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
+            this.btn_reports.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_reports.ImageOptions.SvgImage")));
+            this.btn_reports.Location = new System.Drawing.Point(6, 531);
+            this.btn_reports.Name = "btn_reports";
+            this.btn_reports.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.btn_reports.Size = new System.Drawing.Size(241, 44);
+            this.btn_reports.TabIndex = 21;
+            this.btn_reports.Text = "التقارير";
+            this.btn_reports.Click += new System.EventHandler(this.btn_reports_Click);
+            // 
+            // Sells_btn
+            // 
+            this.Sells_btn.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Sells_btn.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Sells_btn.Appearance.Options.UseFont = true;
+            this.Sells_btn.Appearance.Options.UseForeColor = true;
+            this.Sells_btn.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
+            this.Sells_btn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("Sells_btn.ImageOptions.SvgImage")));
+            this.Sells_btn.Location = new System.Drawing.Point(6, 469);
+            this.Sells_btn.Name = "Sells_btn";
+            this.Sells_btn.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.Sells_btn.Size = new System.Drawing.Size(241, 44);
+            this.Sells_btn.TabIndex = 20;
+            this.Sells_btn.Text = "المبيعات";
+            this.Sells_btn.Click += new System.EventHandler(this.Sells_btn_Click);
+            // 
+            // purchases_btn
+            // 
+            this.purchases_btn.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.purchases_btn.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.purchases_btn.Appearance.Options.UseFont = true;
+            this.purchases_btn.Appearance.Options.UseForeColor = true;
+            this.purchases_btn.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
+            this.purchases_btn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("purchases_btn.ImageOptions.SvgImage")));
+            this.purchases_btn.Location = new System.Drawing.Point(6, 351);
+            this.purchases_btn.Name = "purchases_btn";
+            this.purchases_btn.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.purchases_btn.Size = new System.Drawing.Size(241, 44);
+            this.purchases_btn.TabIndex = 18;
+            this.purchases_btn.Text = "المشتريات";
+            this.purchases_btn.Click += new System.EventHandler(this.purchases_btn_Click);
+            // 
+            // SUPP_btn
+            // 
+            this.SUPP_btn.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SUPP_btn.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.SUPP_btn.Appearance.Options.UseFont = true;
+            this.SUPP_btn.Appearance.Options.UseForeColor = true;
+            this.SUPP_btn.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
+            this.SUPP_btn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("SUPP_btn.ImageOptions.SvgImage")));
+            this.SUPP_btn.Location = new System.Drawing.Point(6, 301);
+            this.SUPP_btn.Name = "SUPP_btn";
+            this.SUPP_btn.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.SUPP_btn.Size = new System.Drawing.Size(241, 44);
+            this.SUPP_btn.TabIndex = 17;
+            this.SUPP_btn.Text = "الموردين";
+            this.SUPP_btn.Click += new System.EventHandler(this.SUPP_btn_Click);
+            // 
+            // main_btn
+            // 
+            this.main_btn.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.main_btn.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.main_btn.Appearance.Options.UseFont = true;
+            this.main_btn.Appearance.Options.UseForeColor = true;
+            this.main_btn.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
+            this.main_btn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("main_btn.ImageOptions.SvgImage")));
+            this.main_btn.Location = new System.Drawing.Point(3, 192);
+            this.main_btn.Name = "main_btn";
+            this.main_btn.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.main_btn.Size = new System.Drawing.Size(241, 53);
+            this.main_btn.TabIndex = 15;
+            this.main_btn.Text = "الرئيسية";
+            this.main_btn.Click += new System.EventHandler(this.main_btn_Click);
             // 
             // panel8
             // 
@@ -167,100 +246,24 @@ namespace Sales_Management_Program
             this.label6.TabIndex = 6;
             this.label6.Text = "Admin";
             // 
-            // main_btn
+            // navbar_pn
             // 
-            this.main_btn.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.main_btn.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.main_btn.Appearance.Options.UseFont = true;
-            this.main_btn.Appearance.Options.UseForeColor = true;
-            this.main_btn.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.main_btn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("main_btn.ImageOptions.SvgImage")));
-            this.main_btn.Location = new System.Drawing.Point(3, 192);
-            this.main_btn.Name = "main_btn";
-            this.main_btn.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.main_btn.Size = new System.Drawing.Size(241, 53);
-            this.main_btn.TabIndex = 15;
-            this.main_btn.Text = "الرئيسية";
-            this.main_btn.Click += new System.EventHandler(this.main_btn_Click);
-            // 
-            // SUPP_btn
-            // 
-            this.SUPP_btn.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SUPP_btn.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.SUPP_btn.Appearance.Options.UseFont = true;
-            this.SUPP_btn.Appearance.Options.UseForeColor = true;
-            this.SUPP_btn.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.SUPP_btn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("SUPP_btn.ImageOptions.SvgImage")));
-            this.SUPP_btn.Location = new System.Drawing.Point(6, 301);
-            this.SUPP_btn.Name = "SUPP_btn";
-            this.SUPP_btn.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.SUPP_btn.Size = new System.Drawing.Size(241, 44);
-            this.SUPP_btn.TabIndex = 17;
-            this.SUPP_btn.Text = "الموردين";
-            this.SUPP_btn.Click += new System.EventHandler(this.SUPP_btn_Click);
-            // 
-            // purchases_btn
-            // 
-            this.purchases_btn.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.purchases_btn.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.purchases_btn.Appearance.Options.UseFont = true;
-            this.purchases_btn.Appearance.Options.UseForeColor = true;
-            this.purchases_btn.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.purchases_btn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("purchases_btn.ImageOptions.SvgImage")));
-            this.purchases_btn.Location = new System.Drawing.Point(6, 351);
-            this.purchases_btn.Name = "purchases_btn";
-            this.purchases_btn.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.purchases_btn.Size = new System.Drawing.Size(241, 44);
-            this.purchases_btn.TabIndex = 18;
-            this.purchases_btn.Text = "المشتريات";
-            this.purchases_btn.Click += new System.EventHandler(this.purchases_btn_Click);
-            // 
-            // Sells_btn
-            // 
-            this.Sells_btn.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Sells_btn.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.Sells_btn.Appearance.Options.UseFont = true;
-            this.Sells_btn.Appearance.Options.UseForeColor = true;
-            this.Sells_btn.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.Sells_btn.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("Sells_btn.ImageOptions.SvgImage")));
-            this.Sells_btn.Location = new System.Drawing.Point(6, 462);
-            this.Sells_btn.Name = "Sells_btn";
-            this.Sells_btn.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.Sells_btn.Size = new System.Drawing.Size(241, 44);
-            this.Sells_btn.TabIndex = 20;
-            this.Sells_btn.Text = "المبيعات";
-            this.Sells_btn.Click += new System.EventHandler(this.Sells_btn_Click);
-            // 
-            // btn_reports
-            // 
-            this.btn_reports.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_reports.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btn_reports.Appearance.Options.UseFont = true;
-            this.btn_reports.Appearance.Options.UseForeColor = true;
-            this.btn_reports.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.btn_reports.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton20.ImageOptions.SvgImage")));
-            this.btn_reports.Location = new System.Drawing.Point(9, 512);
-            this.btn_reports.Name = "btn_reports";
-            this.btn_reports.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.btn_reports.Size = new System.Drawing.Size(241, 44);
-            this.btn_reports.TabIndex = 21;
-            this.btn_reports.Text = "التقارير";
-            this.btn_reports.Click += new System.EventHandler(this.btn_reports_Click);
-            // 
-            // simpleButton22
-            // 
-            this.simpleButton22.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton22.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.simpleButton22.Appearance.Options.UseFont = true;
-            this.simpleButton22.Appearance.Options.UseForeColor = true;
-            this.simpleButton22.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.simpleButton22.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton22.ImageOptions.SvgImage")));
-            this.simpleButton22.Location = new System.Drawing.Point(6, 622);
-            this.simpleButton22.Name = "simpleButton22";
-            this.simpleButton22.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton22.Size = new System.Drawing.Size(241, 44);
-            this.simpleButton22.TabIndex = 23;
-            this.simpleButton22.Text = "الاعدادات";
+            this.navbar_pn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.navbar_pn.Controls.Add(this.panel8);
+            this.navbar_pn.Controls.Add(this.main_btn);
+            this.navbar_pn.Controls.Add(this.items_brn);
+            this.navbar_pn.Controls.Add(this.SUPP_btn);
+            this.navbar_pn.Controls.Add(this.purchases_btn);
+            this.navbar_pn.Controls.Add(this.Customers_btn);
+            this.navbar_pn.Controls.Add(this.Sells_btn);
+            this.navbar_pn.Controls.Add(this.btn_reports);
+            this.navbar_pn.Controls.Add(this.users_btn);
+            this.navbar_pn.Controls.Add(this.Setting_btn);
+            this.navbar_pn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.navbar_pn.Location = new System.Drawing.Point(884, 62);
+            this.navbar_pn.Name = "navbar_pn";
+            this.navbar_pn.Size = new System.Drawing.Size(250, 691);
+            this.navbar_pn.TabIndex = 0;
             // 
             // pictureBox3
             // 
@@ -296,7 +299,7 @@ namespace Sales_Management_Program
             this.Customers_btn.Appearance.Options.UseForeColor = true;
             this.Customers_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Customers_btn.ImageOptions.Image")));
             this.Customers_btn.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.Customers_btn.Location = new System.Drawing.Point(3, 412);
+            this.Customers_btn.Location = new System.Drawing.Point(6, 410);
             this.Customers_btn.Name = "Customers_btn";
             this.Customers_btn.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.Customers_btn.Size = new System.Drawing.Size(241, 44);
@@ -304,20 +307,32 @@ namespace Sales_Management_Program
             this.Customers_btn.Text = "العملاء";
             this.Customers_btn.Click += new System.EventHandler(this.Customers_btn_Click);
             // 
-            // simpleButton21
+            // users_btn
             // 
-            this.simpleButton21.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton21.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.simpleButton21.Appearance.Options.UseFont = true;
-            this.simpleButton21.Appearance.Options.UseForeColor = true;
-            this.simpleButton21.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton21.ImageOptions.Image")));
-            this.simpleButton21.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
-            this.simpleButton21.Location = new System.Drawing.Point(6, 572);
-            this.simpleButton21.Name = "simpleButton21";
-            this.simpleButton21.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton21.Size = new System.Drawing.Size(241, 44);
-            this.simpleButton21.TabIndex = 22;
-            this.simpleButton21.Text = "المستخدمين";
+            this.users_btn.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.users_btn.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.users_btn.Appearance.Options.UseFont = true;
+            this.users_btn.Appearance.Options.UseForeColor = true;
+            this.users_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("users_btn.ImageOptions.Image")));
+            this.users_btn.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
+            this.users_btn.Location = new System.Drawing.Point(6, 581);
+            this.users_btn.Name = "users_btn";
+            this.users_btn.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.users_btn.Size = new System.Drawing.Size(241, 44);
+            this.users_btn.TabIndex = 22;
+            this.users_btn.Text = "المستخدمين";
+            this.users_btn.Click += new System.EventHandler(this.users_btn_Click);
+            // 
+            // navbarminmax
+            // 
+            this.navbarminmax.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.navbarminmax.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("navbarminmax.ImageOptions.Image")));
+            this.navbarminmax.Location = new System.Drawing.Point(1083, 9);
+            this.navbarminmax.Name = "navbarminmax";
+            this.navbarminmax.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.navbarminmax.Size = new System.Drawing.Size(39, 50);
+            this.navbarminmax.TabIndex = 5;
+            this.navbarminmax.Click += new System.EventHandler(this.navbarminmax_Click);
             // 
             // simpleButton1
             // 
@@ -385,9 +400,9 @@ namespace Sales_Management_Program
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel7.ResumeLayout(false);
-            this.navbar_pn.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            this.navbar_pn.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -405,21 +420,22 @@ namespace Sales_Management_Program
         private DevExpress.XtraEditors.SimpleButton simpleButton2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel navbar_pn;
+        private System.Windows.Forms.Panel pn_content;
+        private DevExpress.XtraEditors.SimpleButton navbarminmax;
+        private DevExpress.XtraEditors.SimpleButton Setting_btn;
+        private DevExpress.XtraEditors.SimpleButton users_btn;
+        private DevExpress.XtraEditors.SimpleButton btn_reports;
+        private DevExpress.XtraEditors.SimpleButton Sells_btn;
+        private DevExpress.XtraEditors.SimpleButton Customers_btn;
+        private DevExpress.XtraEditors.SimpleButton purchases_btn;
+        private DevExpress.XtraEditors.SimpleButton SUPP_btn;
+        private DevExpress.XtraEditors.SimpleButton items_brn;
+        private DevExpress.XtraEditors.SimpleButton main_btn;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label6;
-        private DevExpress.XtraEditors.SimpleButton main_btn;
-        private DevExpress.XtraEditors.SimpleButton items_brn;
-        private DevExpress.XtraEditors.SimpleButton SUPP_btn;
-        private DevExpress.XtraEditors.SimpleButton purchases_btn;
-        private DevExpress.XtraEditors.SimpleButton Customers_btn;
-        private DevExpress.XtraEditors.SimpleButton Sells_btn;
-        private DevExpress.XtraEditors.SimpleButton btn_reports;
-        private DevExpress.XtraEditors.SimpleButton simpleButton21;
-        private DevExpress.XtraEditors.SimpleButton simpleButton22;
-        private System.Windows.Forms.Panel pn_content;
+        private System.Windows.Forms.Panel navbar_pn;
     }
 }
 

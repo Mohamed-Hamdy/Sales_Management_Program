@@ -61,7 +61,7 @@ namespace Sales_Management_Program.Presentation_Layer
                     }
                     else
                     {
-                        MessageBox.Show("Faild Login");
+                        MessageBox.Show("Something Wrong Please Make Sure your Data is Correct");
                     }
 
                 }
@@ -81,6 +81,16 @@ namespace Sales_Management_Program.Presentation_Layer
         private void simpleButton1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Signup_btn_Click(object sender, EventArgs e)
+        {
+            Presentation_Layer.FFRM_USERS_ADD frm_add = new FFRM_USERS_ADD();
+            frm_add.id = 0;
+            frm_add.simpleButton2.Text = "تسجيل حساب";
+            frm_add.edt_Roll.Visible = false;
+            frm_add.label1.Visible = false;
+            frm_add.Show();
         }
     }
 }

@@ -29,6 +29,7 @@ namespace Sales_Management_Program.Presentation_Layer
         public FFRM_USERS_ADD()
         {
             InitializeComponent();
+          
         }
 
         

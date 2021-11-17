@@ -55,7 +55,7 @@ namespace Sales_Management_Program
         {
             pn_content.Controls.Clear();
             pn_content.Controls.Add(frm_home.pn_home);
-            if (lb_roll.Text == "مستخدم")
+            if (lb_roll.Text == "User")
             {
                 users_btn.Enabled = false;
             }
@@ -120,8 +120,8 @@ namespace Sales_Management_Program
         {
             pn_content.Controls.Clear();
             pn_content.Controls.Add(frm_reports.pn_cat);
-            Sales_Management_SystemEntities1 db = new Sales_Management_SystemEntities1();
-            frm_sells.gridControl1.DataSource = db.TB_Sales.ToList();
+            //Sales_Management_SystemEntities1 db = new Sales_Management_SystemEntities1();
+            //frm_sells.gridControl1.DataSource = db.TB_Sales.ToList();
         }
 
         private void navbarminmax_Click(object sender, EventArgs e)

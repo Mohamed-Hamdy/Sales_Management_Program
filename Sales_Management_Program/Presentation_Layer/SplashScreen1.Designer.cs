@@ -49,7 +49,7 @@ namespace Sales_Management_Program.Presentation_Layer
             this.progressBarControl.EditValue = 0;
             this.progressBarControl.Location = new System.Drawing.Point(24, 232);
             this.progressBarControl.Name = "progressBarControl";
-            this.progressBarControl.Size = new System.Drawing.Size(402, 12);
+            this.progressBarControl.Size = new System.Drawing.Size(494, 12);
             this.progressBarControl.TabIndex = 5;
             // 
             // labelCopyright
@@ -83,7 +83,7 @@ namespace Sales_Management_Program.Presentation_Layer
             this.peImage.Properties.ShowMenu = false;
             this.peImage.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Stretch;
             this.peImage.Properties.SvgImageColorizationMode = DevExpress.Utils.SvgImageColorizationMode.None;
-            this.peImage.Size = new System.Drawing.Size(448, 200);
+            this.peImage.Size = new System.Drawing.Size(540, 200);
             this.peImage.TabIndex = 9;
             // 
             // peLogo
@@ -91,7 +91,7 @@ namespace Sales_Management_Program.Presentation_Layer
             this.peLogo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.peLogo.EditValue = ((object)(resources.GetObject("peLogo.EditValue")));
-            this.peLogo.Location = new System.Drawing.Point(261, 267);
+            this.peLogo.Location = new System.Drawing.Point(381, 267);
             this.peLogo.Name = "peLogo";
             this.peLogo.Properties.AllowFocused = false;
             this.peLogo.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -99,7 +99,7 @@ namespace Sales_Management_Program.Presentation_Layer
             this.peLogo.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.peLogo.Properties.ShowMenu = false;
             this.peLogo.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
-            this.peLogo.Size = new System.Drawing.Size(188, 59);
+            this.peLogo.Size = new System.Drawing.Size(157, 55);
             this.peLogo.TabIndex = 8;
             // 
             // timer1
@@ -112,7 +112,7 @@ namespace Sales_Management_Program.Presentation_Layer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 320);
+            this.ClientSize = new System.Drawing.Size(542, 326);
             this.Controls.Add(this.peImage);
             this.Controls.Add(this.peLogo);
             this.Controls.Add(this.labelStatus);

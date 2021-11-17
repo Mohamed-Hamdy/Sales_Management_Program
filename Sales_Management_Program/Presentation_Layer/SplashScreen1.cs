@@ -21,7 +21,7 @@ namespace Sales_Management_Program.Presentation_Layer
         public SplashScreen1()
         {
             InitializeComponent();
-            this.labelCopyright.Text = "Copyright © Mohamed El Laithy";
+            this.labelCopyright.Text = "Copyright © Mohamed El Laithy - 2021";
         }
 
         #region Overrides

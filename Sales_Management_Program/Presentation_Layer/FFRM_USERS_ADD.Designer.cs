@@ -37,9 +37,9 @@ namespace Sales_Management_Program.Presentation_Layer
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
+            this.pic_cover = new DevExpress.XtraEditors.PictureEdit();
             this.edt_name = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.pic_cover = new DevExpress.XtraEditors.PictureEdit();
             this.pnadd_cont.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_cover.Properties)).BeginInit();
             this.SuspendLayout();
@@ -58,7 +58,7 @@ namespace Sales_Management_Program.Presentation_Layer
             this.pnadd_cont.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnadd_cont.Location = new System.Drawing.Point(0, 0);
             this.pnadd_cont.Name = "pnadd_cont";
-            this.pnadd_cont.Size = new System.Drawing.Size(889, 537);
+            this.pnadd_cont.Size = new System.Drawing.Size(859, 511);
             this.pnadd_cont.TabIndex = 0;
             // 
             // edt_Roll
@@ -68,8 +68,8 @@ namespace Sales_Management_Program.Presentation_Layer
             this.edt_Roll.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
             this.edt_Roll.FormattingEnabled = true;
             this.edt_Roll.Items.AddRange(new object[] {
-            "مدير ",
-            "مستخدم"});
+            "Admin",
+            "User"});
             this.edt_Roll.Location = new System.Drawing.Point(386, 328);
             this.edt_Roll.Name = "edt_Roll";
             this.edt_Roll.Size = new System.Drawing.Size(271, 33);
@@ -80,11 +80,11 @@ namespace Sales_Management_Program.Presentation_Layer
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 32.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label5.Location = new System.Drawing.Point(314, 56);
+            this.label5.Location = new System.Drawing.Point(245, 56);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(231, 49);
+            this.label5.Size = new System.Drawing.Size(350, 49);
             this.label5.TabIndex = 25;
-            this.label5.Text = " اضافه مستخدم";
+            this.label5.Text = "  صفحه اضافه مستخدم ";
             // 
             // edt_password
             // 
@@ -102,7 +102,7 @@ namespace Sales_Management_Program.Presentation_Layer
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label2.Location = new System.Drawing.Point(736, 257);
+            this.label2.Location = new System.Drawing.Point(721, 257);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(132, 33);
             this.label2.TabIndex = 21;
@@ -115,7 +115,7 @@ namespace Sales_Management_Program.Presentation_Layer
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label1.Location = new System.Drawing.Point(764, 324);
+            this.label1.Location = new System.Drawing.Point(749, 324);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(104, 33);
             this.label1.TabIndex = 20;
@@ -123,18 +123,29 @@ namespace Sales_Management_Program.Presentation_Layer
             // 
             // simpleButton2
             // 
-            this.simpleButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.simpleButton2.Appearance.Font = new System.Drawing.Font("Tahoma", 14F);
             this.simpleButton2.Appearance.ForeColor = System.Drawing.SystemColors.GrayText;
             this.simpleButton2.Appearance.Options.UseFont = true;
             this.simpleButton2.Appearance.Options.UseForeColor = true;
+            this.simpleButton2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(469, 439);
+            this.simpleButton2.Location = new System.Drawing.Point(0, 441);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(400, 70);
+            this.simpleButton2.Size = new System.Drawing.Size(859, 70);
             this.simpleButton2.TabIndex = 19;
             this.simpleButton2.Text = "اضافة";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
+            // 
+            // pic_cover
+            // 
+            this.pic_cover.EditValue = ((object)(resources.GetObject("pic_cover.EditValue")));
+            this.pic_cover.Location = new System.Drawing.Point(12, 153);
+            this.pic_cover.Name = "pic_cover";
+            this.pic_cover.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.pic_cover.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
+            this.pic_cover.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
+            this.pic_cover.Size = new System.Drawing.Size(332, 269);
+            this.pic_cover.TabIndex = 17;
             // 
             // edt_name
             // 
@@ -152,29 +163,18 @@ namespace Sales_Management_Program.Presentation_Layer
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.label4.Location = new System.Drawing.Point(725, 192);
+            this.label4.Location = new System.Drawing.Point(710, 192);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(143, 33);
             this.label4.TabIndex = 15;
             this.label4.Text = "اسم المستخدم";
-            // 
-            // pic_cover
-            // 
-            this.pic_cover.EditValue = ((object)(resources.GetObject("pic_cover.EditValue")));
-            this.pic_cover.Location = new System.Drawing.Point(12, 155);
-            this.pic_cover.Name = "pic_cover";
-            this.pic_cover.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.pic_cover.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pic_cover.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Zoom;
-            this.pic_cover.Size = new System.Drawing.Size(332, 269);
-            this.pic_cover.TabIndex = 17;
             // 
             // FFRM_USERS_ADD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(889, 537);
+            this.ClientSize = new System.Drawing.Size(859, 511);
             this.Controls.Add(this.pnadd_cont);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -198,9 +198,9 @@ namespace Sales_Management_Program.Presentation_Layer
         public DevExpress.XtraEditors.SimpleButton simpleButton2;
         public System.Windows.Forms.TextBox edt_password;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         public System.Windows.Forms.ComboBox edt_Roll;
         public DevExpress.XtraEditors.PictureEdit pic_cover;
+        public System.Windows.Forms.Label label1;
     }
 }

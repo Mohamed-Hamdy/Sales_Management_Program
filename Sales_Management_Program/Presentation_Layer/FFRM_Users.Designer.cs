@@ -40,7 +40,13 @@ namespace Sales_Management_Program.Presentation_Layer
             this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.pn_cat = new System.Windows.Forms.Panel();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.tBUsersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sales_Management_SystemDataSet5 = new Sales_Management_Program.Sales_Management_SystemDataSet5();
             this.gridView5 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colUser_Name = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colUser_Password = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colUser_Roll = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colUser_State = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -48,23 +54,17 @@ namespace Sales_Management_Program.Presentation_Layer
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.sales_Management_SystemDataSet5 = new Sales_Management_Program.Sales_Management_SystemDataSet5();
-            this.tBUsersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tB_UsersTableAdapter = new Sales_Management_Program.Sales_Management_SystemDataSet5TableAdapters.TB_UsersTableAdapter();
-            this.colUser_Name = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colUser_Password = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colUser_Roll = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colUser_State = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
             this.pn_cat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBUsersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sales_Management_SystemDataSet5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView5)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sales_Management_SystemDataSet5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tBUsersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // gridView2
@@ -126,6 +126,16 @@ namespace Sales_Management_Program.Presentation_Layer
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView5});
             // 
+            // tBUsersBindingSource
+            // 
+            this.tBUsersBindingSource.DataMember = "TB_Users";
+            this.tBUsersBindingSource.DataSource = this.sales_Management_SystemDataSet5;
+            // 
+            // sales_Management_SystemDataSet5
+            // 
+            this.sales_Management_SystemDataSet5.DataSetName = "Sales_Management_SystemDataSet5";
+            this.sales_Management_SystemDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // gridView5
             // 
             this.gridView5.Appearance.ColumnFilterButton.BackColor = System.Drawing.Color.Black;
@@ -137,6 +147,38 @@ namespace Sales_Management_Program.Presentation_Layer
             this.colUser_State});
             this.gridView5.GridControl = this.gridControl1;
             this.gridView5.Name = "gridView5";
+            // 
+            // colUser_Name
+            // 
+            this.colUser_Name.Caption = "اسم المستخدم";
+            this.colUser_Name.FieldName = "User_Name";
+            this.colUser_Name.Name = "colUser_Name";
+            this.colUser_Name.Visible = true;
+            this.colUser_Name.VisibleIndex = 0;
+            // 
+            // colUser_Password
+            // 
+            this.colUser_Password.Caption = "الرقم السرى";
+            this.colUser_Password.FieldName = "User_Password";
+            this.colUser_Password.Name = "colUser_Password";
+            this.colUser_Password.Visible = true;
+            this.colUser_Password.VisibleIndex = 1;
+            // 
+            // colUser_Roll
+            // 
+            this.colUser_Roll.Caption = "الصلاحية";
+            this.colUser_Roll.FieldName = "User_Roll";
+            this.colUser_Roll.Name = "colUser_Roll";
+            this.colUser_Roll.Visible = true;
+            this.colUser_Roll.VisibleIndex = 2;
+            // 
+            // colUser_State
+            // 
+            this.colUser_State.Caption = "حاله الدخول";
+            this.colUser_State.FieldName = "User_State";
+            this.colUser_State.Name = "colUser_State";
+            this.colUser_State.Visible = true;
+            this.colUser_State.VisibleIndex = 3;
             // 
             // panel2
             // 
@@ -224,51 +266,9 @@ namespace Sales_Management_Program.Presentation_Layer
             this.simpleButton1.Text = "اضافه";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
-            // sales_Management_SystemDataSet5
-            // 
-            this.sales_Management_SystemDataSet5.DataSetName = "Sales_Management_SystemDataSet5";
-            this.sales_Management_SystemDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tBUsersBindingSource
-            // 
-            this.tBUsersBindingSource.DataMember = "TB_Users";
-            this.tBUsersBindingSource.DataSource = this.sales_Management_SystemDataSet5;
-            // 
             // tB_UsersTableAdapter
             // 
             this.tB_UsersTableAdapter.ClearBeforeFill = true;
-            // 
-            // colUser_Name
-            // 
-            this.colUser_Name.Caption = "اسم المستخدم";
-            this.colUser_Name.FieldName = "User_Name";
-            this.colUser_Name.Name = "colUser_Name";
-            this.colUser_Name.Visible = true;
-            this.colUser_Name.VisibleIndex = 0;
-            // 
-            // colUser_Password
-            // 
-            this.colUser_Password.Caption = "الرقم السرى";
-            this.colUser_Password.FieldName = "User_Password";
-            this.colUser_Password.Name = "colUser_Password";
-            this.colUser_Password.Visible = true;
-            this.colUser_Password.VisibleIndex = 1;
-            // 
-            // colUser_Roll
-            // 
-            this.colUser_Roll.Caption = "الصلاحية";
-            this.colUser_Roll.FieldName = "User_Roll";
-            this.colUser_Roll.Name = "colUser_Roll";
-            this.colUser_Roll.Visible = true;
-            this.colUser_Roll.VisibleIndex = 2;
-            // 
-            // colUser_State
-            // 
-            this.colUser_State.Caption = "حاله الدخول";
-            this.colUser_State.FieldName = "User_State";
-            this.colUser_State.Name = "colUser_State";
-            this.colUser_State.Visible = true;
-            this.colUser_State.VisibleIndex = 3;
             // 
             // FFRM_Users
             // 
@@ -287,11 +287,11 @@ namespace Sales_Management_Program.Presentation_Layer
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
             this.pn_cat.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBUsersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sales_Management_SystemDataSet5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView5)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sales_Management_SystemDataSet5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tBUsersBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

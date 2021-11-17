@@ -34,6 +34,7 @@ namespace Sales_Management_Program
             this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel4 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.btn_logout = new DevExpress.XtraEditors.SimpleButton();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pn_content = new System.Windows.Forms.Panel();
             this.Setting_btn = new DevExpress.XtraEditors.SimpleButton();
@@ -43,10 +44,9 @@ namespace Sales_Management_Program
             this.SUPP_btn = new DevExpress.XtraEditors.SimpleButton();
             this.main_btn = new DevExpress.XtraEditors.SimpleButton();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lb_username = new System.Windows.Forms.Label();
+            this.lb_roll = new System.Windows.Forms.Label();
             this.navbar_pn = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.items_brn = new DevExpress.XtraEditors.SimpleButton();
             this.Customers_btn = new DevExpress.XtraEditors.SimpleButton();
             this.users_btn = new DevExpress.XtraEditors.SimpleButton();
@@ -54,14 +54,14 @@ namespace Sales_Management_Program
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.navbar_pn.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuDragControl2
@@ -79,7 +79,7 @@ namespace Sales_Management_Program
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.simpleButton4);
             this.panel4.Controls.Add(this.simpleButton3);
-            this.panel4.Controls.Add(this.simpleButton2);
+            this.panel4.Controls.Add(this.btn_logout);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
@@ -96,6 +96,19 @@ namespace Sales_Management_Program
             this.label4.Size = new System.Drawing.Size(68, 25);
             this.label4.TabIndex = 4;
             this.label4.Text = "الرئيسية";
+            // 
+            // btn_logout
+            // 
+            this.btn_logout.Appearance.Font = new System.Drawing.Font("Tahoma", 10.25F);
+            this.btn_logout.Appearance.Options.UseFont = true;
+            this.btn_logout.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton2.ImageOptions.SvgImage")));
+            this.btn_logout.Location = new System.Drawing.Point(147, 9);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.btn_logout.Size = new System.Drawing.Size(107, 44);
+            this.btn_logout.TabIndex = 1;
+            this.btn_logout.Text = "Logout";
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
             // panel7
             // 
@@ -132,6 +145,7 @@ namespace Sales_Management_Program
             this.Setting_btn.Size = new System.Drawing.Size(241, 44);
             this.Setting_btn.TabIndex = 23;
             this.Setting_btn.Text = "الاعدادات";
+            this.Setting_btn.Click += new System.EventHandler(this.Setting_btn_Click);
             // 
             // btn_reports
             // 
@@ -141,7 +155,7 @@ namespace Sales_Management_Program
             this.btn_reports.Appearance.Options.UseForeColor = true;
             this.btn_reports.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleRight;
             this.btn_reports.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btn_reports.ImageOptions.SvgImage")));
-            this.btn_reports.Location = new System.Drawing.Point(6, 531);
+            this.btn_reports.Location = new System.Drawing.Point(9, 531);
             this.btn_reports.Name = "btn_reports";
             this.btn_reports.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
             this.btn_reports.Size = new System.Drawing.Size(241, 44);
@@ -215,36 +229,35 @@ namespace Sales_Management_Program
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.label5);
+            this.panel8.Controls.Add(this.lb_username);
             this.panel8.Controls.Add(this.pictureBox3);
-            this.panel8.Controls.Add(this.label6);
+            this.panel8.Controls.Add(this.lb_roll);
             this.panel8.Location = new System.Drawing.Point(0, 3);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(247, 183);
             this.panel8.TabIndex = 14;
             // 
-            // label5
+            // lb_username
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(37, 111);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(180, 25);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Mohamed Hamdy";
+            this.lb_username.AutoSize = true;
+            this.lb_username.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_username.Location = new System.Drawing.Point(88, 127);
+            this.lb_username.Name = "lb_username";
+            this.lb_username.Size = new System.Drawing.Size(119, 25);
+            this.lb_username.TabIndex = 5;
+            this.lb_username.Text = "M El Laithy";
+            this.lb_username.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label6
+            // lb_roll
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(87, 136);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(72, 25);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "Admin";
+            this.lb_roll.AutoSize = true;
+            this.lb_roll.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_roll.ForeColor = System.Drawing.Color.Red;
+            this.lb_roll.Location = new System.Drawing.Point(105, 152);
+            this.lb_roll.Name = "lb_roll";
+            this.lb_roll.Size = new System.Drawing.Size(66, 23);
+            this.lb_roll.TabIndex = 6;
+            this.lb_roll.Text = "Admin";
             // 
             // navbar_pn
             // 
@@ -264,16 +277,6 @@ namespace Sales_Management_Program
             this.navbar_pn.Name = "navbar_pn";
             this.navbar_pn.Size = new System.Drawing.Size(250, 691);
             this.navbar_pn.TabIndex = 0;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Sales_Management_Program.Properties.Resources.profile_icon1;
-            this.pictureBox3.Location = new System.Drawing.Point(67, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(115, 105);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
             // 
             // items_brn
             // 
@@ -364,15 +367,6 @@ namespace Sales_Management_Program
             this.simpleButton3.TabIndex = 2;
             this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
-            // simpleButton2
-            // 
-            this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(147, 13);
-            this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.simpleButton2.Size = new System.Drawing.Size(39, 44);
-            this.simpleButton2.TabIndex = 1;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Sales_Management_Program.Properties.Resources.profile_icon;
@@ -382,6 +376,16 @@ namespace Sales_Management_Program
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Sales_Management_Program.Properties.Resources.profile_icon1;
+            this.pictureBox3.Location = new System.Drawing.Point(27, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(195, 121);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
             // 
             // Main
             // 
@@ -403,8 +407,8 @@ namespace Sales_Management_Program
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.navbar_pn.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -417,13 +421,11 @@ namespace Sales_Management_Program
         private System.Windows.Forms.Label label4;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
         private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
+        private DevExpress.XtraEditors.SimpleButton btn_logout;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel pn_content;
         private DevExpress.XtraEditors.SimpleButton navbarminmax;
-        private DevExpress.XtraEditors.SimpleButton Setting_btn;
-        private DevExpress.XtraEditors.SimpleButton users_btn;
         private DevExpress.XtraEditors.SimpleButton btn_reports;
         private DevExpress.XtraEditors.SimpleButton Sells_btn;
         private DevExpress.XtraEditors.SimpleButton Customers_btn;
@@ -432,10 +434,12 @@ namespace Sales_Management_Program
         private DevExpress.XtraEditors.SimpleButton items_brn;
         private DevExpress.XtraEditors.SimpleButton main_btn;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel navbar_pn;
+        public DevExpress.XtraEditors.SimpleButton Setting_btn;
+        public System.Windows.Forms.Label lb_username;
+        public System.Windows.Forms.Label lb_roll;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        public DevExpress.XtraEditors.SimpleButton users_btn;
     }
 }
 

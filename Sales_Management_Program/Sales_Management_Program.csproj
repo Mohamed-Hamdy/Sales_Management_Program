@@ -167,6 +167,8 @@
     <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Runtime.Remoting" />
@@ -203,6 +205,18 @@
     </Compile>
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation_Layer\FFRM_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation_Layer\FFRM_Login.Designer.cs">
+      <DependentUpon>FFRM_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation_Layer\FFRM_Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation_Layer\FFRM_Setting.Designer.cs">
+      <DependentUpon>FFRM_Setting.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation_Layer\FFRM_Sells_ADD.cs">
       <SubType>Form</SubType>
@@ -306,6 +320,12 @@
     <Compile Include="Presentation_Layer\Report1.Designer.cs">
       <DependentUpon>Report1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation_Layer\SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation_Layer\SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sales_Management_SystemDataSet.Designer.cs">
@@ -383,6 +403,12 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation_Layer\FFRM_Login.resx">
+      <DependentUpon>FFRM_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation_Layer\FFRM_Setting.resx">
+      <DependentUpon>FFRM_Setting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation_Layer\FFRM_Sells_ADD.resx">
       <DependentUpon>FFRM_Sells_ADD.cs</DependentUpon>
     </EmbeddedResource>
@@ -433,6 +459,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation_Layer\Report1.resx">
       <DependentUpon>Report1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation_Layer\SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -25,7 +25,7 @@ namespace Sales_Management_Program.Presentation_Layer
         public int id;
         Sales_Management_SystemEntities1 db = new Sales_Management_SystemEntities1();
         Presentation_Layer.FFRM_Users frm_users = new Presentation_Layer.FFRM_Users();
-
+        Main main = new Main();
         public FFRM_USERS_ADD()
         {
             InitializeComponent();
@@ -53,13 +53,13 @@ namespace Sales_Management_Program.Presentation_Layer
                 // check add or edit 
                 if (id == 0)
                 {
+
                     // Add
                     pic_cover.Image.Save(methods.ma, System.Drawing.Imaging.ImageFormat.Png);
                     tb_users.User_Name = edt_name.Text;
                     tb_users.User_Password = edt_password.Text;
                     tb_users.User_Roll = edt_Roll.Text;
                     tb_users.User_State = "False";
-                    
                     //tb_users. = methods.convert_byte();
                     db.TB_Users.Add(tb_users);
                     tb_users.ID = this.id;
@@ -75,11 +75,18 @@ namespace Sales_Management_Program.Presentation_Layer
                 {
                     // edit
                     pic_cover.Image.Save(methods.ma, System.Drawing.Imaging.ImageFormat.Png);
+                    if (main.lb_username.Text == tb_users.User_Name)
+                    {
+                        tb_users.User_State = "True";
+                    }
+                    else
+                    {
+                        tb_users.User_State = "False";
+                    }
                     tb_users.User_Name = edt_name.Text;
                     tb_users.User_Password = edt_password.Text;
                     tb_users.User_Roll = edt_Roll.Text;
                     //tb_supp.Supp_Image = methods.convert_byte();
-                    tb_users.User_State = "False";
                     tb_users.ID = this.id;
                     db.Entry(tb_users).State = System.Data.Entity.EntityState.Modified;
                     db.SaveChanges();

@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using Sales_Management_Program.Presentation_Layer;
 using System;
 using System.Linq;
 using System.Windows.Forms;
@@ -17,6 +18,8 @@ namespace Sales_Management_Program
         Presentation_Layer.FFRM_Sells frm_sells = new Presentation_Layer.FFRM_Sells();
         Presentation_Layer.FRM_Reports frm_reports = new Presentation_Layer.FRM_Reports();
         Presentation_Layer.FFRM_Users frm_users = new Presentation_Layer.FFRM_Users();
+        Presentation_Layer.FFRM_Setting frm_settings = new Presentation_Layer.FFRM_Setting();
+        TB_Users tb_users = new TB_Users();
 
         Sales_Management_SystemEntities1 db = new Sales_Management_SystemEntities1();
 
@@ -52,6 +55,12 @@ namespace Sales_Management_Program
         {
             pn_content.Controls.Clear();
             pn_content.Controls.Add(frm_home.pn_home);
+            if (lb_roll.Text == "مستخدم")
+            {
+                users_btn.Enabled = false;
+            }
+            
+
         }
 
         private void main_btn_Click(object sender, EventArgs e)
@@ -212,6 +221,27 @@ namespace Sales_Management_Program
             pn_content.Controls.Add(frm_users.pn_cat);
             Sales_Management_SystemEntities1 db = new Sales_Management_SystemEntities1();
             frm_users.gridControl1.DataSource = db.TB_Users.ToList();
+        }
+
+        private void Setting_btn_Click(object sender, EventArgs e)
+        {
+
+            Presentation_Layer.FFRM_Setting frm_add = new FFRM_Setting();
+            frm_add.simpleButton2.Text = "حفظ";
+            frm_add.Show();
+        }
+
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            Presentation_Layer.FFRM_Login login = new FFRM_Login();
+            tb_users = db.TB_Users.Where(x => x.User_State == "True").FirstOrDefault();
+            //tb_users = db.TB_Users.Where(x => x.User_Name == tb_users.User_Name && x.User_Password == tb_users.User_Password).FirstOrDefault();
+            tb_users.User_State = "False";
+            db.Entry(tb_users).State = System.Data.Entity.EntityState.Modified;
+            db.SaveChanges();
+            this.Enabled = false;
+            login.Show();
+            this.Hide();     
         }
     }
 }

@@ -356,9 +356,6 @@ namespace Sales_Management_Program.Presentation_Layer
         private DevExpress.XtraGrid.Views.Grid.GridView gridView4;
         public System.Windows.Forms.Panel pn_cat;
         private System.Windows.Forms.Panel panel2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton2;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
         private DevExpress.XtraEditors.SimpleButton simpleButton6;
         private System.Windows.Forms.TextBox textBox2;
@@ -371,5 +368,8 @@ namespace Sales_Management_Program.Presentation_Layer
         private DevExpress.XtraGrid.Columns.TileViewColumn colSupp_Phone;
         private DevExpress.XtraGrid.Columns.TileViewColumn colSupp_Email;
         private DevExpress.XtraGrid.Columns.TileViewColumn colSupp_Image;
+        public DevExpress.XtraEditors.SimpleButton simpleButton1;
+        public DevExpress.XtraEditors.SimpleButton simpleButton2;
+        public DevExpress.XtraEditors.SimpleButton simpleButton3;
     }
 }

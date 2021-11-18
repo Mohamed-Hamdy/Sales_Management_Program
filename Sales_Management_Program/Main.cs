@@ -58,8 +58,21 @@ namespace Sales_Management_Program
             if (lb_roll.Text == "User")
             {
                 users_btn.Enabled = false;
+
+                frm_supp.simpleButton1.Enabled = false;
+                frm_supp.simpleButton3.Enabled = false;
+                frm_supp.simpleButton2.Enabled = false;
+
+
+                frm_cus.simpleButton1.Enabled = false;
+                frm_cus.simpleButton3.Enabled = false;
+                frm_cus.simpleButton2.Enabled = false;
+
+
+                frm_home.AddSUPP_btn.Enabled = false;
+                frm_home.ADDCUSTOMERS_btn.Enabled = false;
             }
-            
+
 
         }
 

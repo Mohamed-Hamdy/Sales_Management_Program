@@ -88,8 +88,8 @@ namespace Sales_Management_Program.Presentation_Layer
             Presentation_Layer.FFRM_USERS_ADD frm_add = new FFRM_USERS_ADD();
             frm_add.id = 0;
             frm_add.simpleButton2.Text = "تسجيل حساب";
-            frm_add.edt_Roll.Visible = false;
-            frm_add.label1.Visible = false;
+            frm_add.edt_Roll.Text = "User";
+            frm_add.edt_Roll.Enabled = false;
             frm_add.Show();
         }
     }

@@ -19,7 +19,6 @@ namespace Sales_Management_Program.Presentation_Layer
         private Sales_Management_SystemEntities1 db = new Sales_Management_SystemEntities1();
         TB_Suppliers tb_supp = new TB_Suppliers();
         int id;
-
         Presentation_Layer.FRM_HOME frm_home = new Presentation_Layer.FRM_HOME();
 
         public FRM_SUPP()
@@ -46,6 +45,7 @@ namespace Sales_Management_Program.Presentation_Layer
         {
             // TODO: This line of code loads data into the 'sales_Management_SystemDataSet1.TB_Suppliers' table. You can move, or remove it, as needed.
             this.tB_SuppliersTableAdapter.Fill(this.sales_Management_SystemDataSet1.TB_Suppliers);
+           
         }
 
         // Add Button Function

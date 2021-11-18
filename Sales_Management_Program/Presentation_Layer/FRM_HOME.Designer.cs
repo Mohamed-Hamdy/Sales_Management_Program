@@ -112,7 +112,7 @@ namespace Sales_Management_Program.Presentation_Layer
             this.ADDSALES_btn.Appearance.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ADDSALES_btn.Appearance.Options.UseFont = true;
             this.ADDSALES_btn.Appearance.Options.UseForeColor = true;
-            this.ADDSALES_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
+            this.ADDSALES_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ADDSALES_btn.ImageOptions.Image")));
             this.ADDSALES_btn.Location = new System.Drawing.Point(704, 39);
             this.ADDSALES_btn.Name = "ADDSALES_btn";
             this.ADDSALES_btn.Size = new System.Drawing.Size(155, 58);
@@ -140,7 +140,7 @@ namespace Sales_Management_Program.Presentation_Layer
             this.ADDCUSTOMERS_btn.Appearance.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ADDCUSTOMERS_btn.Appearance.Options.UseFont = true;
             this.ADDCUSTOMERS_btn.Appearance.Options.UseForeColor = true;
-            this.ADDCUSTOMERS_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
+            this.ADDCUSTOMERS_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ADDCUSTOMERS_btn.ImageOptions.Image")));
             this.ADDCUSTOMERS_btn.Location = new System.Drawing.Point(533, 39);
             this.ADDCUSTOMERS_btn.Name = "ADDCUSTOMERS_btn";
             this.ADDCUSTOMERS_btn.Size = new System.Drawing.Size(155, 58);
@@ -154,7 +154,7 @@ namespace Sales_Management_Program.Presentation_Layer
             this.ADDPURCHASES_btn.Appearance.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ADDPURCHASES_btn.Appearance.Options.UseFont = true;
             this.ADDPURCHASES_btn.Appearance.Options.UseForeColor = true;
-            this.ADDPURCHASES_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
+            this.ADDPURCHASES_btn.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("ADDPURCHASES_btn.ImageOptions.Image")));
             this.ADDPURCHASES_btn.Location = new System.Drawing.Point(361, 39);
             this.ADDPURCHASES_btn.Name = "ADDPURCHASES_btn";
             this.ADDPURCHASES_btn.Size = new System.Drawing.Size(155, 58);
@@ -542,8 +542,6 @@ namespace Sales_Management_Program.Presentation_Layer
         #endregion
         public System.Windows.Forms.Panel panel1;
         private DevExpress.XtraEditors.SimpleButton ADDSALES_btn;
-        private DevExpress.XtraEditors.SimpleButton AddSUPP_btn;
-        private DevExpress.XtraEditors.SimpleButton ADDCUSTOMERS_btn;
         private DevExpress.XtraEditors.SimpleButton ADDPURCHASES_btn;
         private DevExpress.XtraEditors.SimpleButton addCAT_btn;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
@@ -572,5 +570,7 @@ namespace Sales_Management_Program.Presentation_Layer
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox6;
         public System.Windows.Forms.Panel pn_home;
+        public DevExpress.XtraEditors.SimpleButton AddSUPP_btn;
+        public DevExpress.XtraEditors.SimpleButton ADDCUSTOMERS_btn;
     }
 }

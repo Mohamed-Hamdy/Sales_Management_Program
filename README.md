@@ -1,15 +1,4 @@
 
-
-<!-- PROJECT LOGO -->
-<div align="center">
-  <a href="https://github.com/Mohamed-Hamdy/Sales_Management_Program">
-    <img src="https://github.com/Mohamed-Hamdy/Sales_Management_Program/blob/master/images/Resized%20logo.png" alt="Logo" width="80" height="80">
-  </a>
-  <h3 align="center">Sales Management Program</h3>
-</div>
-
-
-
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>

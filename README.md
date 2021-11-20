@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Mohamed-Hamdy/Sales_Management_Program">
-    <img src="https://github.com/Mohamed-Hamdy/Sales_Management_Program/blob/master/images/logo_2.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/Mohamed-Hamdy/Sales_Management_Program/blob/master/images/logo.ico" alt="Logo" width="80" height="80">
   </a>
   <h3 align="center">Sales_Management_Program</h3>
 </div>
@@ -17,10 +17,7 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
+      </li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -29,8 +26,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#Project_development_stages">Project development stages</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
@@ -50,23 +46,9 @@ The sales management program is a program that manages sales for any project, wh
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-
-### Built With
-
-
-* [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- GETTING STARTED -->
 ## Getting Started
-
-instructions how to run this project locally.
-To get a local copy up and running follow these simple example steps.
-* [Download the exe File](https://docs.microsoft.com/en-us/dotnet/csharp/)
-
+instructions how to run this project locally. To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 * [.Net Framework 4.8]
@@ -74,71 +56,42 @@ To get a local copy up and running follow these simple example steps.
 
 
 ### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+TO make exe file and Run project in your pc without problems  
+* first step use the project files and bulit project in vs 2019 then bulit project
+* second step use the <a href="https://github.com/Mohamed-Hamdy/Sales_Management_Program/blob/master/SQL_File.sql
+">SQL File</a> and use microsoft sql server 20191 to export tables of database
+* Third step use bulid your project and test it in vs 2019
+* you can use the <a href="https://www.advancedinstaller.com">advanced installer</a> to choose your project installation style and make your exe file but takecare from program prerequisites
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+To Learn how to use program you can watch <a href="https://github.com/Mohamed-Hamdy/Sales_Management_Program/blob/master/images/Project%20Run%20Vedio.mkv">this vedio</a>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
-<!-- ROADMAP -->
-## Roadmap
+<!-- Project development stages -->
+## Project_development_stages
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+* Project v1.0 ( All Basic Pages )
+* Project V2.0 (complete the form category buttons functionality -> add and edit and delete and update)
+* project v2.1-->Finish All Category Function Code (Add item , update , Edit Item , Delete Item , Search)
+* Project v2.2-->Add Suppliers Section with all Functions and Activate it with Database
+* Project v2.3-->Add Purchases Section with all Functions and Connect it with Database
+* Project v2.3.1-->Update Purchases_Add Form Design
+* Project v2.4-->Add Customers Section with all Functions and Connect it with database
+* Project v2.5-->Add Sales Section with all Functions and Connect it with database and update database sql file after add new tables on databas
+* Project v2.6-->Add Reports Section with all Functions that help user to expoert the reports to pdf files
+* Project v2.7-->Add Users Section with his database table and update databasee file
+* Project v2.8-->Add program Setting page and Login page and program Splash Screen with all features
+* Project v2.9-->Final Project First Test Version
+* Project v3.0-->Final Project Second Test Version (Handle some cases in program inputs)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- LICENSE -->
@@ -153,9 +106,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/mohamed-hamdy-0155b2173/)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/Mohamed-Hamdy/Sales_Management_Program](https://github.com/Mohamed-Hamdy/Sales_Management_Program)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -166,31 +119,14 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [C# Windows Forms Course](https://www.youtube.com/watch?v=62igefFrZq4&list=PLX07l0qxoHFLuyuV-A1LmlMr5MhDhNfMG)
+* [C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/)
+* [Create Sales Management System with Print Control](https://www.youtube.com/watch?v=4mBke5HjvI0)
+* [c sharp windows forms application](https://www.guru99.com/c-sharp-windows-forms-application.html)
+* [Dev Express Documentation](https://docs.devexpress.com)
+* [stackoverflow](https://stackoverflow.com)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png

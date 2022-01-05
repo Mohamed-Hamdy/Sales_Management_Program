@@ -15,9 +15,9 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#Project_development_stages">Project development stages</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#Resources">Resources</a></li>
+    <li><a href="#license">License</a></li>
   </ol>
 </details>
 
@@ -82,13 +82,6 @@ To Learn how to use program you can watch <a href="https://github.com/Mohamed-Ha
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- CONTACT -->
@@ -103,9 +96,9 @@ Project Link: [https://github.com/Mohamed-Hamdy/Sales_Management_Program](https:
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## Resources
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+list of resources I find helpful in project
 
 * [C# Windows Forms Course](https://www.youtube.com/watch?v=62igefFrZq4&list=PLX07l0qxoHFLuyuV-A1LmlMr5MhDhNfMG)
 * [C# Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/)
@@ -117,4 +110,11 @@ Use this space to list resources you find helpful and would like to give credit 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
